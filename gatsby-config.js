@@ -4,4 +4,5 @@
 
 module.exports = {
   pathPrefix: "/cs132-project",
+  plugins: ["gatsby-plugin-postcss"],
 };
