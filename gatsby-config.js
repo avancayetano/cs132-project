@@ -4,5 +4,13 @@
 
 module.exports = {
   pathPrefix: "/cs132-project",
-  plugins: ["gatsby-plugin-postcss"],
+  plugins: [
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+  ],
 };
