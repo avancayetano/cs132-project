@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "flowbite-typography": "^1.0.3",
     "gatsby-plugin-postcss": "^6.7.0",
     "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",

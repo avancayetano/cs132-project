@@ -1,15 +1,14 @@
 import React from "react";
-import { Card, Button } from "flowbite-react";
 import { Link } from "gatsby";
 
 import BasePage from "../components/BasePage";
-import logo from "../images/icon.png";
+import logo from "../images/logo.png";
 
 // The Overview page
-const IndexPage = (props) => {
+const IndexPage = () => {
   return (
-    <BasePage location={props.uri}>
-      <div className="container mx-auto my-5 p-4 w-3/5 text-center">
+    <BasePage page={"Overview"}>
+      <div className="container mx-auto my-5 p-4 text-center w-4/5">
         <h1 className="mb-4 text-6xl font-extrabold text-gray-800 dark:text-white">
           CS 132{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-500">
@@ -19,58 +18,100 @@ const IndexPage = (props) => {
         <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-700 dark:text-white">
           PH Twitter{" "}
           <span className="underline underline-offset-4 decoration-6 decoration-red-400 dark:decoration-red-600">
-            Fake News
+            Fake News*
           </span>{" "}
           Analysis
         </h1>
       </div>
 
-      <div className="container mx-auto my-3 p-4 grid grid-cols-3 gap-12 w-3/5">
-        <div className="">
+      <div className="container mx-auto my-3 p-4 grid grid-cols-3 gap-12 w-4/5">
+        <div>
           <img src={logo} className="w-full rounded-full" alt="Logo" />
         </div>
         <div className="col-span-2">
-          <h1 className="mb-4 text-5xl font-extrabold leading-none tracking-tight text-gray-800 dark:text-white">
-            Group 21. Group Name.
-          </h1>
+          <article className="format format-lg format-blue">
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+              Chis
+              <mark className="px-1 text-white bg-red-400 rounded dark:bg-blue-600">
+                misinformation
+              </mark>
+            </h1>
 
-          <p className="mb-5 text-lg text-gray-700 dark:text-gray-400 text-justify">
-            We are data science students from University of the Philippines -
-            Diliman. Imbued with love for the discipline and the nation, we aim
-            to produce a rigorous study about disinformation in the Philippines
-            by applying cutting-edge methods data science is offering today. We
-            plan to investigate information from tweets generated in Twitter
-            dating from 2020 to 2022.
-          </p>
-          <p className="mb-5 text-lg text-gray-700 dark:text-gray-400 text-justify">
-            Paragraph about our topic... Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Fusce tincidunt odio eu neque tincidunt luctus.
-            Aenean neque diam, lobortis ultricies tellus at, fringilla
-            condimentum lacus. Integer leo urna, commodo at dictum non, iaculis
-            eu turpis.
-          </p>
-
-          <Link to="/team" className="text-2xl text-blue-700 underline">
-            Data Science Team
-          </Link>
-          <div className="my-2 text-lg text-gray-900 dark:text-gray-400">
-            <li>Harold Antonio</li>
-            <li>Anthony Van Cayetano</li>
-            <li>Raphael Justin Portuguez</li>
-          </div>
+            <p className="lead text-justify">
+              We are data science students from University of the Philippines -
+              Diliman under the supervision of Prof. Paul Regonia. Imbued with
+              love for the discipline and the nation, we aim to produce a
+              rigorous study about disinformation in the Philippines by applying
+              cutting-edge methods data science currently provides. We plan to
+              investigate information generated in Twitter dating from 2020 to
+              2022.
+            </p>
+            <h3>
+              <Link to="/team">Data Science Team</Link>
+            </h3>
+            <ul>
+              <li>Harold Antonio</li>
+              <li>Anthony Van Cayetano</li>
+              <li>Raphael Justin Portuguez</li>
+            </ul>
+          </article>
         </div>
       </div>
-      <div className="container mx-auto my-5 p-4 w-3/5 text-center">
-        <p className="mb-4 text-gray-700 text-2xl">
+
+      <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+
+      <div className="container mx-auto my-3 p-4 w-3/5">
+        <article className="max-w-none format format-lg format-blue">
+          <h1 className="text-center">About our study.</h1>
+          <p className="text-justify">
+            The recent 2022 Philippine Elections has been a dense mixture of
+            information and conspiracies. Within the campaign period, defamation
+            through disinformation (has often been done/is typically) against
+            Leni Robredo, a strong contender for the presidency{" "}
+            <a
+              href="https://www.rappler.com/moveph/election-disinformation-efforts-target-robredo-image-boost-marcos-jr-tsek-ph-study/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [Chua, 2022]
+            </a>
+            . Even the three children of Robredo were victims of disinformation
+            up to the point of sexual harassment{" "}
+            <a
+              href="https://www.rappler.com/nation/elections/aika-robredo-seeks-nbi-assistance-fake-video-scandal-issue/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [Bolledo, 2022]
+            </a>
+            . This study aims to detail, analyze, and interpret malicious tweets
+            which declare disinformation about Jessica Marie "Aika" Robredo,
+            Janine Patricia "Tricia" Robredo, and Jillian Therese Robredo.
+          </p>
+          <p className="text-justify">
+            It is not a straightforward task to come up with a topic. We
+            initially thought that choosing an election-related topic could be
+            mundane, so we considered alternatives. Harold suggested subjects
+            regarding the Covid Pandemic and China-US propaganda. Raphael
+            pondered over topics about the economy and basketball. In the end,
+            we settled for the allegations against the Robredo sisters because
+            we think it is easier to gather tweets about it and fact-checking
+            should require less research.
+          </p>
+        </article>
+      </div>
+
+      <div className="container mx-auto mb-12 w-3/4 text-center">
+        <p className="my-6 text-gray-700 text-2xl">
           Want to learn more? View our source codes.
         </p>
         <a
           href="https://github.com/avancayetano/cs132-project"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white mx-auto cursor-pointer bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2"
+          className="text-white mx-auto cursor-pointer bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center"
         >
-          GitHub Repo
+          Website GitHub Repo
         </a>
       </div>
     </BasePage>
@@ -82,5 +123,6 @@ export default IndexPage;
 export const Head = () => (
   <>
     <title>CS 132 Project | Overview</title>
+    <meta name="viewport" content="width=1024"></meta>
   </>
 );
