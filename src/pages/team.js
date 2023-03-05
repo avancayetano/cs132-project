@@ -84,13 +84,11 @@ const TeamPage = () => {
             </p>
             <p className="my-2 text-gray-800 text-justify">
               Hello! I am Raphael Justin C. Portuguez, but you can call me Raph
-              🙂. My interests include basketball, parkour, and EDM music.
+              🙂. My interests include mathematics, science, and EDM music.
               Lately, I have been updating myself with events all over the
               world. In today's time, I believe we should be aware of what is
               going on outside our country just as much as what is going on
               inside. I am a student from the class CS 132 WFX.
-              <br />
-              <br />
             </p>
             <a
               href="https://github.com/rj42guez"

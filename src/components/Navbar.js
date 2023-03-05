@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
+import "../styles/navbar.css"
 
 import logo from "../images/logo.png";
 
@@ -27,8 +28,10 @@ const Navbar = (props) => {
     },
   ];
 
+  
+
   return (
-    <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav id = "navbar" className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="container flex flex-wrap items-center justify-center mx-auto">
         <Link to="/" className="flex items-center float-left absolute left-12">
           <img src={logo} className="h-6 mr-3 sm:h-9 rounded-full" alt="Logo" />
@@ -62,5 +65,16 @@ const Navbar = (props) => {
     </nav>
   );
 };
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 export default Navbar;
