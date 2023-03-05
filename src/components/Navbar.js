@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
-import "../styles/navbar.css"
 
 import logo from "../images/logo.png";
 
