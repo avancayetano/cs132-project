@@ -10,36 +10,68 @@ const IndexPage = () => {
   const headings = [
     {
       label: "Abstract",
-      text: "lorem ipsum dolor magnifico abracadabralisus",
+      text: "It's been discovered that there is disinformation about the sisters.",
       link: "",
     },
     {
       label: "Problem Formulation",
-      text: "lorem ipsum dolor magnifico abracadabralisus. Go to statement of the problem",
+      text: "In this section we will discuss the main goal of the study. Go to statement of the problem.",
       link: "/problem",
     },
     {
       label: "Data Collection",
-      text: "lorem ipsum dolor magnifico abracadabralisus. Go to statement of the problem",
+      text: "Not all tweets are created equal. Some are certified chismisinfo. Go to data collection.",
       link: "/data",
     },
     {
       label: "Methodology",
-      text: "lorem ipsum dolor magnifico abracadabralisus. Go to statement of the problem",
+      text: "Discussion about the data science methods we utilized can be found here. Go to methodology.",
       link: "/methods",
     },
     {
       label: "Results and Conclusion",
-      text: "lorem ipsum dolor magnifico abracadabralisus. Go to statement of the problem",
+      text: "From data we gain information and insight through interpretation. Go to results and conclusion.",
       link: "/results",
     },
+    //{
+    //label: "About",
+    //text: "Check out our about page.",
+    //link: "/team"
+    //}
   ];
+
+  const OverviewHeading = (props) => {
+    return (
+      <div className="card w-100% bg-base-100">
+        <div className="card-body">
+          <h2 className="card-title text-3xl">{props.label}</h2>
+          <p>
+            {props.text + " "}
+            <a>&gt;&gt;</a>
+          </p>
+          <div className="card-actions justify-end">
+            <Link to={props.link} className="btn btn-primary">
+              Go
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <BasePage page="Overview">
       <OverviewHero />
       <div className="divider"></div>
-      <div className="container">AA</div>
+      <div className="container pl-32 pr-32 pt-4 pb-4">
+        <ul className="list-none">
+          {headings.map((heading) => (
+            <li key={heading.label}>
+              <OverviewHeading {...heading} />
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="divider"></div>
       <OverviewAbout />
     </BasePage>
