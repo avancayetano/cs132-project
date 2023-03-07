@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "flowbite-react";
 
 import BasePage from "../components/BasePage";
 import harold from "../images/harold.jpg";
@@ -14,7 +13,7 @@ const TeamPage = () => {
           Who We Are
         </h1>
         <div className="grid grid-cols-3 gap-3">
-          <Card>
+          <>
             <div className="flex flex-wrap gap-2 text-center">
               <img
                 src={harold}
@@ -41,8 +40,8 @@ const TeamPage = () => {
             >
               GitHub Profile
             </a>
-          </Card>
-          <Card>
+          </>
+          <>
             <div className="flex flex-wrap gap-2 text-center">
               <img
                 src={avan}
@@ -70,8 +69,8 @@ const TeamPage = () => {
             >
               GitHub Profile
             </a>
-          </Card>
-          <Card>
+          </>
+          <>
             <div className="flex flex-wrap gap-2 text-center">
               <img
                 src={raph}
@@ -98,7 +97,7 @@ const TeamPage = () => {
             >
               GitHub Profile
             </a>
-          </Card>
+          </>
         </div>
 
         <div className="inline-flex items-center justify-center w-full">
