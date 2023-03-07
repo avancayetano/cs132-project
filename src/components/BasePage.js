@@ -5,7 +5,8 @@ const BasePage = (props) => {
   return (
     <>
       <Navbar page={props.page} />
-      {props.children}
+
+      <div className="relative top-16 pb-16">{props.children}</div>
     </>
   );
 };

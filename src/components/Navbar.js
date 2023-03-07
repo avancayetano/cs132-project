@@ -10,6 +10,10 @@ const Navbar = (props) => {
       link: "/",
     },
     {
+      label: "Problem",
+      link: "/problem",
+    },
+    {
       label: "Data",
       link: "/data",
     },
