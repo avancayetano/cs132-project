@@ -7,13 +7,13 @@ const OverviewHero = () => {
     <div className="hero min-h-fit">
       <div className="hero-content">
         <div className="">
-          <h1 className="mb-4 text-7xl font-extrabold text-gray-800 text-center">
+          <h1 className="mb-4 text-7xl font-extrabold  text-center">
             CS 132{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-500">
               Data Science
             </span>{" "}
           </h1>
-          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-700 text-center">
+          <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight  text-center">
             PH Twitter{" "}
             <span className="underline underline-offset-4 decoration-6 decoration-red-400 ">
               Fake News*
@@ -25,8 +25,8 @@ const OverviewHero = () => {
               <img src={logo} className="w-full rounded-full" alt="Logo" />
             </div>
             <div className="col-span-2">
-              <article className="prose prose-base">
-                <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
+              <article className="prose prose-a:text-blue-600">
+                <h1 className="mb-4 font-extrabold leading-none tracking-tight">
                   Chis
                   <mark className="px-1 text-white bg-red-400 rounded ">
                     misinformation

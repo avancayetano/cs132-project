@@ -69,9 +69,12 @@ const TeamPage = () => {
 
   return (
     <BasePage page={"Team"}>
-      <div className="container mx-auto p-4 w-4/5 text-center ">
-        <h1 className="mb-4 text-3xl font-extrabold">Who We Are</h1>
-        <div className="grid grid-cols-3 gap-16">
+      <div className="container mx-auto w-4/5 text-center ">
+        <article className="prose lg:prose-xl mx-auto mb-4">
+          <h1 className="text-center">Who We Are</h1>
+        </article>
+
+        <div className="grid grid-cols-3 gap-4 md:w-full lg:w-4/5 mx-auto">
           {profiles.map((p) => (
             <ProfileCard {...p} key={p.name} />
           ))}

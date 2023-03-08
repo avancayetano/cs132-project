@@ -4,11 +4,9 @@ import BasePage from "../components/BasePage";
 const ResultsPage = () => {
   return (
     <BasePage page={"Results"}>
-      <div className="container mx-auto p-4 w-3/4 text-center">
-        <h1 className="mb-4 text-3xl font-extrabold text-gray-800 dark:text-white">
-          Results
-        </h1>
-      </div>
+      <article className="prose lg:prose-xl mx-auto">
+        <h1 className="text-center">Results</h1>
+      </article>
     </BasePage>
   );
 };

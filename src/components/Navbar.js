@@ -64,8 +64,8 @@ const Navbar = (props) => {
                 to={tab.link}
                 className={
                   (props.page === tab.label
-                    ? "text-blue-700 "
-                    : "text-gray-700 ") + "font-medium"
+                    ? "text-blue-700 underline underline-offset-4 "
+                    : " ") + "font-medium"
                 }
               >
                 {tab.label}
