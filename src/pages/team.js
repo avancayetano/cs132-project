@@ -1,9 +1,11 @@
 import React from "react";
 
 import BasePage from "../components/BasePage";
+import OverviewHero from "../components/OverviewHero";
 import harold from "../images/harold.jpg";
 import avan from "../images/avan.jpg";
 import raph from "../images/raph.jpg";
+import OverviewAbout from "../components/OverviewAbout";
 
 const TeamPage = () => {
   const profiles = [
@@ -69,18 +71,20 @@ const TeamPage = () => {
 
   return (
     <BasePage page={"Team"}>
-      <div className="container mx-auto w-4/5 text-center ">
-        <article className="prose lg:prose-xl mx-auto mb-4">
+      <OverviewHero />
+      <div className="divider"></div>
+      <div className="container mx-auto w-4/5 text-center">
+        <article className="prose lg:prose-xl mx-auto">
           <h1 className="text-center">Who We Are</h1>
         </article>
 
-        <div className="grid grid-cols-3 gap-4 md:w-full lg:w-4/5 mx-auto">
+        <div className="grid grid-cols-3 gap-4 md:w-full lg:w-4/5 mx-auto my-8">
           {profiles.map((p) => (
             <ProfileCard {...p} key={p.name} />
           ))}
         </div>
 
-        <div className="divider">Contact Us</div>
+        <div className="divider mt-16">Contact Us</div>
         <div className="container mx-auto mb-12 text-center">
           <p className="mb-6">
             Have any concerns? Contact us by filling out this form!
@@ -95,6 +99,8 @@ const TeamPage = () => {
           </a>
         </div>
       </div>
+      <div className="divider"></div>
+      <OverviewAbout />
     </BasePage>
   );
 };

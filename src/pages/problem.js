@@ -5,23 +5,51 @@ import BasePage from "../components/BasePage";
 const problem = (props) => {
   return (
     <BasePage page="Problem">
-      <article className="prose lg:prose-xl mx-auto">
+      <article className="prose lg:prose-xl mx-auto text-justify">
         <h1 className="text-center">Problem</h1>
         <h2>Background</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget
-          ligula augue. Donec at justo non felis fringilla sagittis. Vestibulum
-          metus augue, suscipit id tempor id, cursus sed massa. Nunc efficitur
-          est ac vestibulum congue. Quisque consectetur diam risus, vitae
-          interdum quam vulputate vel. Cras egestas, magna sed malesuada
-          bibendum, elit lorem rhoncus nisi, vitae vulputate tortor ipsum eget
-          risus. Sed vel convallis nunc.{" "}
+          What is the purpose of disinformation? There is no inherent value in
+          disinformation except to alter the perception of the public toward
+          certain issues or individuals. Now, although the researchers focus on
+          the children of Leni Robredo, the tweets may include references to
+          Mrs. Robredo herself, possibly attributing other malicious stories to
+          her identity.
         </p>
-        <h2>Literature</h2>
+        <p>
+          The former Vice President of the Philippines Leni Robredo ran for the
+          presidential seat last 2022 Elections and has seen a surge of
+          disinformation attacks against her during the campaign period.{" "}
+        </p>
+
         <h2>Statement of the Problem</h2>
-        <h2>Hypotheses</h2>
-        <h2>Scope and Delimitations</h2>
-        <h2>Significance</h2>
+        <p>
+          The researchers ought to identify whether tweets alleging
+          disinformation stories to the children of Leni Robredo contain
+          references to the ex-Vice President herself intending to malign her
+          public image.{" "}
+        </p>
+        <h4>Null Hypothesis</h4>
+        <p>
+          The tweets do not include references to Leni Robredo intending to
+          defame her.{" "}
+        </p>
+        <h4>Alternative Hypothesis</h4>
+        <p>
+          Most tweets include references to Leni Robredo intending to defame
+          her.
+        </p>
+        <h2>Important Sub-problems</h2>
+        <ol>
+          <li>What are the allegations surrounding the Robredo sisters?</li>
+          <li>
+            Who among the sisters is most affected? Could it be due to her
+            popularity?
+          </li>
+          {/*<li>
+            How does the number of disinformation tweets plot against the date?
+  </li>*/}
+        </ol>
       </article>
     </BasePage>
   );

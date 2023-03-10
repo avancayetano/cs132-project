@@ -42,7 +42,7 @@ const IndexPage = () => {
 
   const OverviewHeading = (props) => {
     return (
-      <div className="card w-100% bg-base-100">
+      <div className="card w-4/5 bg-base-100">
         <div className="card-body">
           <h2 className="card-title text-3xl">{props.label}</h2>
           <p>
@@ -63,17 +63,32 @@ const IndexPage = () => {
     <BasePage page="Overview">
       <OverviewHero />
       <div className="divider"></div>
-      <div className="container pl-32 pr-32 pt-4 pb-4">
-        <ul className="list-none">
-          {headings.map((heading) => (
-            <li key={heading.label}>
-              <OverviewHeading {...heading} />
-            </li>
-          ))}
-        </ul>
+      <div className="container mx-auto w-max">
+        <article className="prose lg:prose-xl mx-auto">
+          <h1 className="text-center">
+            Disinformation Tweets Targeting the Robredo Siblings
+          </h1>
+
+          <div className="container">
+            <ul className="list-none">
+              {headings.map((heading) => (
+                <li key={heading.label}>
+                  <OverviewHeading {...heading} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
       </div>
       <div className="divider"></div>
-      <OverviewAbout />
+      <div className="container mx-auto w-3/5">
+        <article className="prose max-w-none">
+          <h1 className="text-center">About</h1>
+          <p className="text-justify">
+            Check out our <Link to="team">about</Link> page.
+          </p>
+        </article>
+      </div>
     </BasePage>
   );
 };
