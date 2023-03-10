@@ -5,7 +5,7 @@ import BasePage from "../components/BasePage";
 const ProblemPage = (props) => {
   return (
     <BasePage page={"Problem"}>
-      <article className="prose lg:prose-xl mx-auto text-justify">
+      <article className="prose lg:prose-xl mx-auto text-justify min-h-screen">
         <h1 className="text-center">Problem</h1>
         <h2>Background</h2>
         <p>

@@ -47,13 +47,13 @@ const TeamPage = () => {
 
   const ProfileCard = (props) => {
     return (
-      <div className="card card-compact bg-base-100 shadow-xl">
+      <div className="card card-compact bg-base-100 shadow-xl not-prose">
         <figure className="">
           <img src={props.image} alt="Person" className="" />
         </figure>
         <div className="card-body">
           <h2 className="card-title justify-center">{props.name}</h2>
-          <p className="text-justify">{props.description}</p>
+          <p className="text-justify text-lg">{props.description}</p>
           <div className="card-actions justify-center">
             <a
               className="btn btn-primary"
@@ -72,34 +72,34 @@ const TeamPage = () => {
   return (
     <BasePage page={"About"}>
       <OverviewHero />
-      <div className="divider"></div>
-      <div className="container mx-auto w-4/5 my-8 text-center">
-        <article className="prose lg:prose-xl mx-auto">
+      <div className="divider mx-auto w-4/5 my-12"></div>
+      <div className="container mx-auto w-4/5 text-center">
+        <article className="prose lg:prose-xl mx-auto max-w-none">
           <h2 className="text-center">Who We Are</h2>
+
+          <div className="grid grid-cols-3 gap-4 md:w-full mx-auto my-8">
+            {profiles.map((p) => (
+              <ProfileCard {...p} key={p.name} />
+            ))}
+          </div>
+
+          <div className="divider">Contact Us</div>
+          <div className="mx-auto mb-12 text-center">
+            <p className="mb-6">
+              Have any concerns? Contact us by filling out this form!
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfXFGIN8BqF7JEOgAP0AwxABbROKVVYaQk2KrZovln-3oMq0Q/viewform?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              Submit your questions here
+            </a>
+          </div>
         </article>
-
-        <div className="grid grid-cols-3 gap-4 md:w-full lg:w-4/5 mx-auto my-8">
-          {profiles.map((p) => (
-            <ProfileCard {...p} key={p.name} />
-          ))}
-        </div>
-
-        <div className="divider mt-16">Contact Us</div>
-        <div className="container mx-auto mb-12 text-center">
-          <p className="mb-6">
-            Have any concerns? Contact us by filling out this form!
-          </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfXFGIN8BqF7JEOgAP0AwxABbROKVVYaQk2KrZovln-3oMq0Q/viewform?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary"
-          >
-            Submit your questions here
-          </a>
-        </div>
       </div>
-      <div className="divider"></div>
+      <div className="divider w-4/5 mx-auto my-16"></div>
       <OverviewAbout />
     </BasePage>
   );

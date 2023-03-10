@@ -44,10 +44,10 @@ const OverviewAbout = () => {
         </article>
       </div>
 
-      <div className="container mx-auto mb-12 w-3/4 text-center">
-        <p className="my-6 text-2xl">
+      <div className="container mx-auto my-16 w-3/4 text-center">
+        <h3 className="my-6 text-2xl">
           Want to learn more? View our source codes.
-        </p>
+        </h3>
         <a
           href="https://github.com/avancayetano/cs132-project"
           target="_blank"

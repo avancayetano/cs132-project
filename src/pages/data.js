@@ -4,7 +4,7 @@ import BasePage from "../components/BasePage";
 const DataPage = () => {
   return (
     <BasePage page={"Data"}>
-      <article className="prose lg:prose-xl mx-auto">
+      <article className="prose lg:prose-xl mx-auto min-h-screen">
         <h1 className="text-center">Data</h1>
       </article>
     </BasePage>

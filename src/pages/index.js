@@ -38,36 +38,41 @@ const IndexPage = () => {
 
   const OverviewHeading = (props) => {
     return (
-      <div className="container my-16">
-        <h3 className="lead">{props.label}</h3>
-        <p>
-          {props.text + " "}
-          <Link to={props.link} className="text-blue-600">
-            &gt;&gt;
+      <div className="">
+        <h3 className="lead">
+          <Link
+            to={props.link}
+            className="underline-offset-4 decoration-6 decoration-blue-600"
+          >
+            {props.label}
           </Link>
-        </p>
+        </h3>
+        <p>{props.text + " "}</p>
       </div>
     );
   };
 
   return (
     <BasePage page="Overview">
-      <div className="hero min-h-fit">
+      <div className="hero min-h-screen relative -top-24 -mb-32">
         <div className="hero-content">
           <div className="">
-            <h1 className="mb-4 text-5xl font-extrabold  text-center">
-              Allegations Against Robredo Sisters
+            <h1 class="mb-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+              Allegations Against{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-700 from-pink-500">
+                Robredo Sisters
+              </span>{" "}
             </h1>
-            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-center text-gray-600">
+            <h1 className="mb-6 text-4xl font-extrabold leading-none tracking-tight text-center">
               PH Twitter{" "}
               <span className="underline underline-offset-4 decoration-6 decoration-red-400 ">
                 Fake News*
               </span>{" "}
               Analysis
             </h1>
-            <h2 className="mb-4 font-extrabold leading-none tracking-tight text-center">
+            <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-center">
               By Chis
-              <mark className="px-1 text-white bg-red-400 rounded ">
+              <mark className="px-1 text-white bg-red-900 rounded ">
                 misinformation
               </mark>{" "}
               Team
@@ -103,11 +108,12 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="divider"></div>
-      <div className="container mx-auto w-max">
+      <div className="divider w-4/5 mx-auto mb-8"></div>
+      <div className="container mx-auto w-max pb-6">
         <article className="prose lg:prose-xl mx-auto max-w-none">
-          <div className="container">
-            <ul className="list-none">
+          <h2 className="py-0 my-0">Outline</h2>
+          <div className="">
+            <ul className="py-0">
               {headings.map((heading) => (
                 <li key={heading.label}>
                   <OverviewHeading {...heading} />
@@ -117,7 +123,7 @@ const IndexPage = () => {
           </div>
         </article>
       </div>
-      <div className="divider"></div>
+      {/* <div className="divider"></div>
       <div className="container mx-auto w-3/5">
         <article className="prose max-w-none">
           <h1 className="text-center">About</h1>
@@ -125,7 +131,7 @@ const IndexPage = () => {
             Check out our <Link to="about">about</Link> page.
           </p>
         </article>
-      </div>
+      </div> */}
     </BasePage>
   );
 };

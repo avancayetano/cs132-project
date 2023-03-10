@@ -4,7 +4,7 @@ import BasePage from "../components/BasePage";
 const MethodsPage = () => {
   return (
     <BasePage page={"Methods"}>
-      <article className="prose lg:prose-xl mx-auto">
+      <article className="prose lg:prose-xl mx-auto min-h-screen">
         <h1 className="text-center">Methods</h1>
       </article>
     </BasePage>
