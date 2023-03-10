@@ -2,9 +2,9 @@ import React from "react";
 
 import BasePage from "../components/BasePage";
 
-const problem = (props) => {
+const ProblemPage = (props) => {
   return (
-    <BasePage page="Problem">
+    <BasePage page={"Problem"}>
       <article className="prose lg:prose-xl mx-auto text-justify">
         <h1 className="text-center">Problem</h1>
         <h2>Background</h2>
@@ -22,7 +22,7 @@ const problem = (props) => {
           disinformation attacks against her during the campaign period.{" "}
         </p>
 
-        <h2>Statement of the Problem</h2>
+        <h2>Research Question</h2>
         <p>
           The researchers ought to identify whether tweets alleging
           disinformation stories to the children of Leni Robredo contain
@@ -39,20 +39,32 @@ const problem = (props) => {
           Most tweets include references to Leni Robredo intending to defame
           her.
         </p>
-        <h2>Important Sub-problems</h2>
+        <h4>Action Plan</h4>
+        <p>
+          Gather tweets consisting of disinformation towards the Robredo sisters
+          and scan each for references to the former Vice President herself.
+        </p>
+        {/*<h2>Important Sub-problems</h2>
         <ol>
           <li>What are the allegations surrounding the Robredo sisters?</li>
           <li>
             Who among the sisters is most affected? Could it be due to her
             popularity?
           </li>
-          {/*<li>
+          <li>
             How does the number of disinformation tweets plot against the date?
-  </li>*/}
-        </ol>
+  </li>
+        </ol>*/}
       </article>
     </BasePage>
   );
 };
 
-export default problem;
+export default ProblemPage;
+
+export const Head = () => (
+  <>
+    <title>CS 132 Project | Problem</title>
+    <meta name="viewport" content="width=1024"></meta>
+  </>
+);
