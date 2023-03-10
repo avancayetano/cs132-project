@@ -70,12 +70,12 @@ const TeamPage = () => {
   };
 
   return (
-    <BasePage page={"Team"}>
+    <BasePage page={"About"}>
       <OverviewHero />
       <div className="divider"></div>
-      <div className="container mx-auto w-4/5 text-center">
+      <div className="container mx-auto w-4/5 my-8 text-center">
         <article className="prose lg:prose-xl mx-auto">
-          <h1 className="text-center">Who We Are</h1>
+          <h2 className="text-center">Who We Are</h2>
         </article>
 
         <div className="grid grid-cols-3 gap-4 md:w-full lg:w-4/5 mx-auto my-8">
@@ -95,7 +95,7 @@ const TeamPage = () => {
             rel="noopener noreferrer"
             className="btn btn-secondary"
           >
-            Submit your questions here.
+            Submit your questions here
           </a>
         </div>
       </div>
@@ -109,7 +109,7 @@ export default TeamPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | Team</title>
+    <title>CS 132 Project | About</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

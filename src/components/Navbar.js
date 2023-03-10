@@ -26,8 +26,8 @@ const Navbar = (props) => {
       link: "/results",
     },
     {
-      label: "Team",
-      link: "/team",
+      label: "About",
+      link: "/about",
     },
   ];
 

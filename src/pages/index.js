@@ -10,11 +10,6 @@ import OverviewAbout from "../components/OverviewAbout";
 const IndexPage = () => {
   const headings = [
     {
-      label: "Abstract",
-      text: "It's been discovered that there is disinformation about the sisters.",
-      link: "",
-    },
-    {
       label: "Problem Formulation",
       text: "In this section we will discuss the main goal of the study. Go to statement of the problem.",
       link: "/problem",
@@ -43,19 +38,14 @@ const IndexPage = () => {
 
   const OverviewHeading = (props) => {
     return (
-      <div className="card w-4/5 bg-base-100">
-        <div className="card-body">
-          <h2 className="card-title text-3xl">{props.label}</h2>
-          <p>
-            {props.text + " "}
-            <a>&gt;&gt;</a>
-          </p>
-          <div className="card-actions justify-end">
-            <Link to={props.link} className="btn btn-primary">
-              Go
-            </Link>
-          </div>
-        </div>
+      <div className="container my-16">
+        <h3 className="lead">{props.label}</h3>
+        <p>
+          {props.text + " "}
+          <Link to={props.link} className="text-blue-600">
+            &gt;&gt;
+          </Link>
+        </p>
       </div>
     );
   };
@@ -65,49 +55,48 @@ const IndexPage = () => {
       <div className="hero min-h-fit">
         <div className="hero-content">
           <div className="">
-            <h1 className="mb-4 text-7xl font-extrabold  text-center">
-              CS 132{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-500">
-                Data Science
-              </span>{" "}
+            <h1 className="mb-4 text-5xl font-extrabold  text-center">
+              Allegations Against Robredo Sisters
             </h1>
-            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-center">
+            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-center text-gray-600">
               PH Twitter{" "}
               <span className="underline underline-offset-4 decoration-6 decoration-red-400 ">
                 Fake News*
               </span>{" "}
               Analysis
             </h1>
-            <div className="container mx-auto mt-16 p-4 grid grid-cols-3 gap-12 w-full">
-              <div>
-                <img src={logo} className="w-full rounded-full" alt="Logo" />
-              </div>
-              <div className="col-span-2">
-                <article className="prose prose-a:text-blue-600">
-                  <h1 className="mb-4 font-extrabold leading-none tracking-tight">
-                    Chis
-                    <mark className="px-1 text-white bg-red-400 rounded ">
-                      misinformation
-                    </mark>
-                  </h1>
-
-                  <p className="lead text-justify">
-                    We are data science students from University of the
-                    Philippines - Diliman under the supervision of Prof. Paul
-                    Regonia. Imbued with love for the discipline and the nation,
-                    we aim to produce a rigorous study about disinformation in
-                    the Philippines by applying cutting-edge methods data
-                    science currently provides. We plan to investigate
-                    information generated in Twitter dating from 2020 to 2022.
+            <h2 className="mb-4 font-extrabold leading-none tracking-tight text-center">
+              By Chis
+              <mark className="px-1 text-white bg-red-400 rounded ">
+                misinformation
+              </mark>{" "}
+              Team
+            </h2>
+            <div className="container mx-auto mt-16 p-4 w-full">
+              <div className="mx-auto">
+                <article className="prose lg:prose-xl prose-a:text-blue-600 mx-auto">
+                  <h2 className="mb-4 font-extrabold leading-none tracking-tight">
+                    Abstract
+                  </h2>
+                  <p className="text-justify">
+                    The recent 2022 Philippine Elections have been a dense
+                    mixture of information and conspiracies. Within the campaign
+                    period, defamation through disinformation (has often been
+                    done/is typical) against Leni Robredo, a strong contender
+                    for the presidency{" "}
+                    <a href="https://www.rappler.com/moveph/election-disinformation-efforts-target-robredo-image-boost-marcos-jr-tsek-ph-study/">
+                      [Chua, 2022]
+                    </a>
+                    . Even the three children of Robredo were victims of
+                    disinformation up to the point of sexual harassment{" "}
+                    <a href="https://www.rappler.com/nation/elections/aika-robredo-seeks-nbi-assistance-fake-video-scandal-issue/">
+                      [Bolledo, 2022]
+                    </a>
+                    . This study aims to detail, analyze, and interpret
+                    malicious tweets which declare disinformation about Jessica
+                    Marie "Aika" Robredo, Janine Patricia "Tricia" Robredo, and
+                    Jillian Therese Robredo.
                   </p>
-                  <h3>
-                    <Link to="/team">Data Science Team</Link>
-                  </h3>
-                  <ul>
-                    <li>Harold Antonio</li>
-                    <li>Anthony Van Cayetano</li>
-                    <li>Raphael Justin Portuguez</li>
-                  </ul>
                 </article>
               </div>
             </div>
@@ -116,11 +105,7 @@ const IndexPage = () => {
       </div>
       <div className="divider"></div>
       <div className="container mx-auto w-max">
-        <article className="prose lg:prose-xl mx-auto">
-          <h1 className="text-center">
-            Disinformation Tweets Targeting the Robredo Siblings
-          </h1>
-
+        <article className="prose lg:prose-xl mx-auto max-w-none">
           <div className="container">
             <ul className="list-none">
               {headings.map((heading) => (
@@ -137,7 +122,7 @@ const IndexPage = () => {
         <article className="prose max-w-none">
           <h1 className="text-center">About</h1>
           <p className="text-justify">
-            Check out our <Link to="team">about</Link> page.
+            Check out our <Link to="about">about</Link> page.
           </p>
         </article>
       </div>

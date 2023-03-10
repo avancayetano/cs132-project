@@ -20,18 +20,18 @@ const OverviewHero = () => {
             </span>{" "}
             Analysis
           </h1>
-          <div className="container mx-auto mt-16 p-4 grid grid-cols-3 gap-12 w-full">
+          <div className="container mx-auto mt-16 py-4 px-20 grid grid-cols-3 gap-12 w-full">
             <div>
               <img src={logo} className="w-full rounded-full" alt="Logo" />
             </div>
             <div className="col-span-2">
-              <article className="prose prose-a:text-blue-600">
-                <h1 className="mb-4 font-extrabold leading-none tracking-tight">
+              <article className="prose lg:prose-xl max-w-none">
+                <h2 className="mb-4 font-extrabold leading-none tracking-tight">
                   Chis
                   <mark className="px-1 text-white bg-red-400 rounded ">
                     misinformation
                   </mark>
-                </h1>
+                </h2>
 
                 <p className="lead text-justify">
                   We are data science students from University of the
@@ -42,14 +42,6 @@ const OverviewHero = () => {
                   currently provides. We plan to investigate information
                   generated in Twitter dating from 2020 to 2022.
                 </p>
-                <h3>
-                  <Link to="/team">Data Science Team</Link>
-                </h3>
-                <ul>
-                  <li>Harold Antonio</li>
-                  <li>Anthony Van Cayetano</li>
-                  <li>Raphael Justin Portuguez</li>
-                </ul>
               </article>
             </div>
           </div>

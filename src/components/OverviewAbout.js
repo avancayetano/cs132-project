@@ -4,8 +4,8 @@ const OverviewAbout = () => {
   return (
     <>
       <div className="container mx-auto w-3/5">
-        <article className="prose max-w-none prose-a:text-blue-600">
-          <h1 className="text-center">About our study.</h1>
+        <article className="prose lg:prose-xl max-w-none prose-a:text-blue-600">
+          <h2 className="text-center">Motivation and Hesitation</h2>
           <p className="text-justify">
             The recent 2022 Philippine Elections has been a dense mixture of
             information and conspiracies. Within the campaign period, defamation
