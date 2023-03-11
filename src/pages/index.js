@@ -54,7 +54,7 @@ const IndexPage = () => {
       <div className="hero">
         <div className="hero-content">
           <div className="">
-            <h1 className="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+            <h1 className="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">
               Allegations Against{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-700 from-pink-500">
                 Robredo Sisters
