@@ -45,7 +45,7 @@ const OverviewAbout = () => {
       </div>
 
       <div className="container mx-auto my-16 w-3/4 text-center">
-        <h3 className="my-6 text-2xl">
+        <h3 className="my-4 text-2xl">
           Want to learn more? View our source codes.
         </h3>
         <a

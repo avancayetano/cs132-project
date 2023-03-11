@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 import logo from "../images/logo.png";
@@ -32,7 +32,7 @@ const Navbar = (props) => {
   ];
 
   return (
-    <div className="navbar bg-base-100 fixed border z-50">
+    <div className="navbar bg-base-100 fixed border z-10 w-screen top-0">
       <div className="navbar-start">
         <label htmlFor="my-drawer" className="btn btn-ghost drawer-button">
           <svg
@@ -62,7 +62,7 @@ const Navbar = (props) => {
                 to={tab.link}
                 className={
                   (props.page === tab.label
-                    ? "text-blue-700 underline underline-offset-4 "
+                    ? "btn btn-primary text-white "
                     : " ") + "font-medium"
                 }
               >

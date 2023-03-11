@@ -5,7 +5,7 @@ const BasePage = (props) => {
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
+      <div className="drawer-content overflow-x-hidden">
         <Navbar page={props.page} />
         <div className="relative top-24 mb-32">{props.children}</div>
         <Footer />
@@ -14,10 +14,10 @@ const BasePage = (props) => {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-base-100 text-base-content">
           <li>
-            <a>Sidebar Item 1</a>
+            <div>Sidebar Item 1</div>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <div>Sidebar Item 2</div>
           </li>
         </ul>
       </div>

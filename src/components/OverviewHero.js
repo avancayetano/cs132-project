@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
+
 import logo from "../images/logo.png";
 
 const OverviewHero = () => {
   return (
-    <div className="hero min-h-5/6">
+    <div className="hero">
       <div className="hero-content">
         <div className="">
           <h1 className="mb-4 text-6xl font-extrabold  text-center">
@@ -15,7 +15,7 @@ const OverviewHero = () => {
           </h1>
           {/* <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight  text-center">
             PH Twitter{" "}
-            <span className="underline underline-offset-4 decoration-6 decoration-red-900 ">
+            <span className="underline underline-offset-4 decoration-4 decoration-red-900 ">
               Fake News*
             </span>{" "}
             Analysis

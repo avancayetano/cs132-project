@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../images/logo.png";
 
 import BasePage from "../components/BasePage";
-import OverviewHero from "../components/OverviewHero";
-import OverviewAbout from "../components/OverviewAbout";
 
 // The Overview page
 const IndexPage = () => {
@@ -42,7 +39,7 @@ const IndexPage = () => {
         <h3 className="lead">
           <Link
             to={props.link}
-            className="underline-offset-4 decoration-6 decoration-blue-600"
+            className="underline-offset-4 decoration-4 decoration-blue-600"
           >
             {props.label}
           </Link>
@@ -54,10 +51,10 @@ const IndexPage = () => {
 
   return (
     <BasePage page="Overview">
-      <div className="hero min-h-screen relative -top-24 -mb-32">
+      <div className="hero">
         <div className="hero-content">
           <div className="">
-            <h1 class="mb-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+            <h1 className="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
               Allegations Against{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-700 from-pink-500">
                 Robredo Sisters
@@ -65,7 +62,7 @@ const IndexPage = () => {
             </h1>
             <h1 className="mb-6 text-4xl font-extrabold leading-none tracking-tight text-center">
               PH Twitter{" "}
-              <span className="underline underline-offset-4 decoration-6 decoration-red-400 ">
+              <span className="underline underline-offset-4 decoration-4 decoration-red-400 ">
                 Fake News*
               </span>{" "}
               Analysis

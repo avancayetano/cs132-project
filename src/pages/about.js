@@ -53,8 +53,8 @@ const TeamPage = () => {
         </figure>
         <div className="card-body">
           <h2 className="card-title justify-center">{props.name}</h2>
-          <p className="text-justify text-lg">{props.description}</p>
-          <div className="card-actions justify-center">
+          <p className="text-justify text-base">{props.description}</p>
+          <div className="card-actions justify-center my-4">
             <a
               className="btn btn-primary"
               href={props.github}
