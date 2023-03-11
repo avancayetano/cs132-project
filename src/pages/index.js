@@ -106,7 +106,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="divider w-4/5 mx-auto mb-8"></div>
-      <div className="container mx-auto w-max pb-6">
+      <div className="container mx-auto w-max">
         <article className="prose lg:prose-xl mx-auto max-w-none">
           <h2 className="py-0 my-0">Outline</h2>
           <div className="">

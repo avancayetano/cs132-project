@@ -32,7 +32,7 @@ const Navbar = (props) => {
   ];
 
   return (
-    <div className="navbar bg-base-100 fixed border z-10 w-screen top-0">
+    <nav className="navbar bg-base-100 sticky top-0 border z-10 border-b-2 border-x-0 mb-8">
       <div className="navbar-start">
         <label htmlFor="my-drawer" className="btn btn-ghost drawer-button">
           <svg
@@ -73,7 +73,7 @@ const Navbar = (props) => {
         </ul>
       </div>
       <div className="navbar-end"></div>
-    </div>
+    </nav>
   );
 };
 

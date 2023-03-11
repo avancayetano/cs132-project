@@ -34,13 +34,13 @@ const OverviewHero = () => {
                 </h2>
 
                 <p className="lead text-justify">
-                  We are data science students from University of the
+                  We are data science students from the University of the
                   Philippines - Diliman under the supervision of Prof. Paul
                   Regonia. Imbued with love for the discipline and the nation,
                   we aim to produce a rigorous study about disinformation in the
                   Philippines by applying cutting-edge methods data science
                   currently provides. We plan to investigate information
-                  generated in Twitter dating from 2016 to 2022.
+                  generated on Twitter dating from 2016 to 2022.
                 </p>
               </article>
             </div>
