@@ -15,7 +15,7 @@ export default MethodsPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | Methods</title>
+    <title>Chismisinfo | Methods</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

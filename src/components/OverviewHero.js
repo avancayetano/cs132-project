@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../images/logo.png";
+import logo from "../images/logo circle.png";
 
 const OverviewHero = () => {
   return (
@@ -13,16 +13,12 @@ const OverviewHero = () => {
               Data Science
             </span>{" "}
           </h1>
-          {/* <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight  text-center">
-            PH Twitter{" "}
-            <span className="underline underline-offset-4 decoration-4 decoration-red-900 ">
-              Fake News*
-            </span>{" "}
-            Analysis
-          </h1> */}
+          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-700">
+            Group 21
+          </h1>
           <div className="container mx-auto mt-16 py-4 px-20 grid grid-cols-3 gap-12 w-full">
             <div>
-              <img src={logo} className="w-full rounded-full" alt="Logo" />
+              <img src={logo} className="w-full" alt="Logo" />
             </div>
             <div className="col-span-2">
               <article className="prose lg:prose-xl max-w-none">

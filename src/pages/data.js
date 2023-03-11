@@ -15,7 +15,7 @@ export default DataPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | Data</title>
+    <title>Chismisinfo | Data</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

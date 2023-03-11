@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import logo from "../images/logo.png";
+import logo from "../images/logo circle.png";
 
 const Navbar = (props) => {
   const tabs = [
@@ -50,7 +50,7 @@ const Navbar = (props) => {
           </svg>
         </label>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <img src={logo} className="h-6 mr-1 sm:h-9 rounded-full" alt="Logo" />
+          <img src={logo} className="h-6 mr-1 sm:h-9" alt="Logo" />
           Chismisinfo
         </Link>
       </div>
@@ -63,7 +63,7 @@ const Navbar = (props) => {
                 className={
                   (props.page === tab.label
                     ? "btn btn-primary text-white "
-                    : " ") + "font-medium"
+                    : "") + "font-semibold"
                 }
               >
                 {tab.label}

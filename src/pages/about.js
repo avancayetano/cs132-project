@@ -109,7 +109,7 @@ export default TeamPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | About</title>
+    <title>Chismisinfo | About</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

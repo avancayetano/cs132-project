@@ -137,7 +137,7 @@ export default IndexPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Data Science</title>
+    <title>Chismisinfo</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

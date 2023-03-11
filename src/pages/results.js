@@ -15,7 +15,7 @@ export default ResultsPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | Results</title>
+    <title>Chismisinfo | Results</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

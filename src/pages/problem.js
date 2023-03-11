@@ -64,7 +64,7 @@ export default ProblemPage;
 
 export const Head = () => (
   <>
-    <title>CS 132 Project | Problem</title>
+    <title>Chismisinfo | Problem</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );
