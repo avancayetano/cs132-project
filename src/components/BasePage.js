@@ -7,7 +7,7 @@ const BasePage = (props) => {
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <Navbar page={props.page} />
-        <div className="relative mb-16">{props.children}</div>
+        <div className="relative mb-16 min-h-screen">{props.children}</div>
         <Footer />
       </div>
       <div className="drawer-side">
