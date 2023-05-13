@@ -35,12 +35,12 @@ const TeamPage = () => {
     {
       name: "Raphael Justin Portuguez",
       image: raph,
-      description: `Hello! I am Raphael Justin C. Portuguez, but you can call me Raph
-        🙂. My interests include mathematics, science, and EDM music.
-        Lately, I have been updating myself with events all over the
-        world. In today's time, I believe we should be aware of what is
-        going on outside our country just as much as what is going on
-        inside. I am a student from the class CS 132 WFX.`,
+      description: `Hello! I am Raphael. I have always been interested with subjects that
+      involve equations. My passion for subjects such as Mathematics and
+      Physics has grown lately. I always wonder how I can apply my Computer
+      Science knowledge to these two particular fields. I am a student from the 
+      class CS 132 WFX.    
+        .`,
       github: "https://github.com/rj42guez",
     },
   ];
