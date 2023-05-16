@@ -85,7 +85,11 @@ const DataPage = () => {
           <DataFeatureCard
             title="The Disinfo Account"
             description="This card attempts to describe the “average” features of an account involved in posting disinformation."
-            select_features={{ mean: 5, median: 8, mode: 9 }}
+            select_features={{
+              mean: 5,
+              median: 8,
+              mode: 9,
+            }}
           />
           <p>
             *Accounts are tagged anonymous when the accounts have pseudonyms,
@@ -112,7 +116,15 @@ const DataPage = () => {
             skewed to the right.?? All accounts have joined before the
             elections.
           </p>
-          <DataFeatureCard title="The Disinfo Tweet" />
+          <DataFeatureCard
+            title="The Disinfo Tweet"
+            description="This card attempts to describe the “average” features of an account involved in posting disinformation."
+            select_features={{
+              mean: 5,
+              median: 8,
+              mode: 9,
+            }}
+          />
           <p>
             *Person with the most references other than Aika, Tricia, or Jillian
             Robredo.
