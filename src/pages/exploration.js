@@ -82,57 +82,57 @@ const ExplorationPage = () => {
             referring to. In total, we named 14 relevant entities.
           </p>
           <div className="overflow-x-auto">
-            <table className="table table-compact w-full text-left">
+            <table className="table table-compact w-full">
               <thead>
                 <tr>
-                  <th>Entity</th>
-                  <th>Names</th>
-                  <th>Number of References*</th>
+                  <th className="text-center">Entity</th>
+                  <th className="text-center">Names</th>
+                  <th className="text-center">Number of References*</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>
+                  <td className="text-center">
                     <i>Individuals</i>
                   </td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>Aika Robredo</td>
+                  <th>Aika Robredo</th>
                   <td>
                     <p>"aika", "aika diri", "aika robredo", "aika rob", "she</p>
                     <p>admitted"</p>
                   </td>
-                  <td>idk</td>
+                  <td>34</td>
                 </tr>
                 <tr>
-                  <td>Bam Aquino</td>
+                  <th>Bam Aquino</th>
                   <td>"bembem"</td>
-                  <td></td>
+                  <td>1**</td>
                 </tr>
                 <tr>
-                  <td>Bongbong Marcos</td>
+                  <th>Bongbong Marcos</th>
                   <td>"bbm", "bbmarcos", "marcos"</td>
-                  <td></td>
+                  <td>24</td>
                 </tr>
                 <tr>
-                  <td>Gwyneth Chua</td>
+                  <th>Gwyneth Chua</th>
                   <td>"chua"</td>
-                  <td></td>
+                  <td>2</td>
                 </tr>
                 <tr>
-                  <td>Jillian Robredo</td>
+                  <th>Jillian Robredo</th>
                   <td>
                     <p>
                       "jillian robredo", "mrs robredo daughter", "hindot ka",
                     </p>
                     <p>"jillian", "jillrobredo", "ma am jill"</p>
                   </td>
-                  <td></td>
+                  <td>60</td>
                 </tr>
                 <tr>
-                  <td>Leni Robredo</td>
+                  <th>Leni Robredo</th>
                   <td>
                     <p>
                       "kaylenipataytayo", "kaylenitalo", "leni lugaw", "leni
@@ -143,59 +143,57 @@ const ExplorationPage = () => {
                     <p>
                       "president leni robredo", "vp leni", "vice president",
                     </p>
-                    <p>
-                      "withdrawleni", "fake vp", "fake vp leni", "her mom", "len
-                    </p>
-                    <p>2x?", "lenlen" "lenlenloser", "leni", "leni robredo",</p>
+                    <p>"withdrawleni", "fake vp", "fake vp leni", "her mom",</p>
+                    <p>"lenlen" "lenlenloser", "leni", "leni robredo",</p>
                     <p>
                       "lenirobredo", "lugaw", "lutang", "lutang ina", "lutang
-                      ina
+                      ina mo",
                     </p>
-                    <p>mo", "mama", "mama nyo", "mom", "mother", "nanay kong</p>
+                    <p>"mama", "mama nyo", "mom", "mother", "nanay kong</p>
                     <p>lutang", "nanay mong lumulutang", "philippines vice</p>
                     <p>
                       president", "robredog", "saint inamo", "sarili niyang ina"
                     </p>
                   </td>
-                  <td></td>
+                  <td>125</td>
                 </tr>
                 <tr>
-                  <td>Tricia Robredo</td>
+                  <th>Tricia Robredo</th>
                   <td>
                     <p>
                       "tricia", "tricia robredo", "trisha", "trisha robredo",
                     </p>
                     <p>"vice president daughter", "she went straight"</p>
                   </td>
-                  <td></td>
+                  <td>120</td>
                 </tr>
                 <tr>
-                  <td>Thinking Pinoy</td>
+                  <th>Thinking Pinoy</th>
                   <td>"tp"</td>
                   <td>1</td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="text-center">
                     <i>Groups</i>
                   </td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>BBM Supporters</td>
+                  <th>BBM Supporters</th>
                   <td>"bbm supporters", "maka bbm tao"</td>
-                  <td></td>
+                  <td>4</td>
                 </tr>
                 <tr>
-                  <td>Communists</td>
-                  <td>"CPP", "CPP-NPA-NDF", "komunista"</td>
-                  <td></td>
+                  <th>Communists</th>
+                  <td>"cpp", "cpp ndf npa", "komunista"</td>
+                  <td>3</td>
                 </tr>
                 <tr>
-                  <td>Filipino People</td>
+                  <th>Filipino People</th>
                   <td>
                     <p>
-                      "igorots sa baguio", "igorots", "igorot people", "igorot",
+                      "igorot sa baguio", "igorots", "igorot people", "igorot",
                     </p>
                     <p>
                       "igorot friends", "igorot native", "ilocano", "kpatid na
@@ -206,32 +204,32 @@ const ExplorationPage = () => {
                     </p>
                     <p>respectful", "they value education"</p>
                   </td>
-                  <td></td>
+                  <td>85</td>
                 </tr>
                 <tr>
-                  <td>Jillian's Baguio Group</td>
+                  <th>Jillian's Baguio Group</th>
                   <td>
                     <p>
-                      "grupo ni jilian", "her camp", "her crowd", "team nila
+                      "grupo ni jillian", "her camp", "her crowd", "team nila
                     </p>
                     <p>jillian"</p>
                   </td>
-                  <td></td>
+                  <td>6</td>
                 </tr>
                 <tr>
-                  <td>Kakampinks</td>
+                  <th>Kakampinks</th>
                   <td>
                     <p>
                       "baguio fenks", "dilapinks", "dilawkadiri", "dilawan",
                     </p>
                     <p>"fenks", "kakampikon", "kakampwet", "kakamdogs",</p>
                     <p>"kakampink", "kakampinks", "kampo ni leni", "pink",</p>
-                    <p>"pinkilawan", ""pinklawan", "supporters nyoga bastos"</p>
+                    <p>"pinkilawan", "pinklawan", "supporters nyoga bastos"</p>
                   </td>
-                  <td></td>
+                  <td>25</td>
                 </tr>
                 <tr>
-                  <td>Robredo Family</td>
+                  <th>Robredo Family</th>
                   <td>
                     <p>
                       "anak ni leni", "anak mo lenlen", "anak ni lenlen", "anak
@@ -241,11 +239,21 @@ const ExplorationPage = () => {
                     <p>"daughter of lugaw", "mga robredo", "mga anak niya",</p>
                     <p></p>"robredo", "tatlong anak"
                   </td>
-                  <td></td>
+                  <td>118</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p>
+            *The number of references to an entity is simply the sum of all the
+            appearances of each gram in the tweets.
+          </p>
+          <p>
+            **Due to being a single reference to Bam Aquino, "bembem A." and its
+            associated tweet does not conclusively refer to Bam Aquino. However,
+            there is a circulating cartoon of Leni and Bam Aquino in which they
+            supposedly planned the scandal issue.
+          </p>
           <p>
             Note: The team has accomplished stemming and lemmatization of the
             tweets. However, this method was discontinued due to poor
