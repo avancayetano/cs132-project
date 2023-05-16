@@ -68,7 +68,9 @@ const ProblemPage = (props) => {
         </ol>
         <h2>Data Analysis Questions</h2>
         <ol>
-          <li>Do the tweets have a negative sentiment against Leni Robredo?</li>
+          <li>
+            Do tweets referencing Leni have a negative sentiment towards her?
+          </li>
           <li>Were the disinformation accounts newly created?</li>
           <li>
             Do tweets having negative sentiments towards Leni Robredo have a

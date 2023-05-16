@@ -54,8 +54,14 @@ const ExplorationPage = () => {
             most popular.
           </p>
           <p>
-            It should be noted that news articles surrounding topic 1 were
-            published on the following dates: Topic 2, 3…”
+            The Baguio incident disinformation tweets were possibly triggered by
+            the heckling at the Baguio Public Market on April 27, 2022. The
+            Scandal incident disinformation tweets were possibly triggered by
+            the surfacing of suspicious links on April 11, 2022. The Quarantine
+            incident disinformation tweets were possibly triggered by Jay
+            Sonza's Facebook post on December 31, 2021. The Hagdan incident
+            disinformation tweets were possibly triggered by Jam Magno's tweet
+            on April 6, 2022.
           </p>
           <h3>Names Entangled to the Disinformation Mire</h3>
           <p>
@@ -80,6 +86,10 @@ const ExplorationPage = () => {
             groups of people. In the case of ambiguous terms, we referred back
             to the original tweets to identify the entity the tweets were
             referring to. In total, we named 14 relevant entities.
+          </p>
+          <p>
+            FUN FACT: Jillian's Baguio group was associated with Karens of the
+            English speaking world.
           </p>
           <div className="overflow-x-auto">
             <table className="table table-compact w-full">
