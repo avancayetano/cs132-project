@@ -75,11 +75,6 @@ const ProblemPage = (props) => {
             positive sentiment towards Bongbong Marcos?
           </li>
           <li>
-            Does the cumulative negative sentiment against Leni Robredo have a
-            correlation with the cumulative number of disinformation accounts
-            joining twitter?
-          </li>
-          <li>
             Do tweets, when grouped according to account popularity, differ in
             terms of sentiment towards Leni Robredo?
           </li>

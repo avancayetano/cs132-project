@@ -2,18 +2,21 @@ import React from "react";
 import BasePage from "../components/BasePage";
 import DataFeatureCard from "../components/DataFeatureCard";
 
-const DataPage = () => {
+const ExplorationPage = () => {
   return (
-    <BasePage page={"Data"}>
+    <BasePage page={"Exploration"}>
       <div className="container mx-auto w-4/5 text-left">
         <article className="prose lg:prose-xl mx-auto text-justify">
           <h1 className="text-center">Data Exploration</h1>
           <h2>Introduction</h2>
           <p>
-            We are able to scrape a total of x,xxx tweets, at least 205 of which
-            are disinformation from xxx accounts. Collection of data for this
-            project was both done manually and by a scraper. [scraper link]
-            Keywords used in searching and scraping came from fact-checking
+            We are able to scrape around 2700 tweets, at least 205 of which are
+            disinformation from 158 accounts. Collection of data for this
+            project was both done manually and by a scraper. [
+            <a href="https://betterprogramming.pub/how-to-scrape-tweets-with-snscrape-90124ed006af">
+              scraper link
+            </a>
+            ] Keywords used in searching and scraping came from fact-checking
             articles defending the Robredo sisters which were first identified
             by the team.
           </p>
@@ -78,17 +81,159 @@ const DataPage = () => {
             to the original tweets to identify the entity the tweets were
             referring to. In total, we named 14 relevant entities.
           </p>
+          <div className="overflow-x-auto">
+            <table className="table table-compact w-full">
+              <thead>
+                <tr>
+                  <th>Entity</th>
+                  <th>Names</th>
+                  <th>Number of References*</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i>Individuals</i>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Aika Robredo</td>
+                  <td>
+                    "aika", "aika diri", "aika robredo", "aika rob", "she
+                    admitted"
+                  </td>
+                  <td>idk</td>
+                </tr>
+                <tr>
+                  <td>Bam Aquino</td>
+                  <td>"bembem"</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Bongbong Marcos</td>
+                  <td>"bbm", "bbmarcos", "marcos"</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Gwyneth Chua</td>
+                  <td>"chua"</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Jillian Robredo</td>
+                  <td>
+                    "jillian robredo", "mrs robredo daughter", "hindot ka",
+                    "jillian", "jillrobredo", "ma am jill"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Leni Robredo</td>
+                  <td>
+                    "kaylenipataytayo", "kaylenitalo", "leni lugaw", "leni
+                    robredog", "lutangina", "mrs robredo", "president leni",
+                    "president leni robredo", "vp leni", "vice president",
+                    "withdrawleni", "fake vp", "fake vp leni", "her mom", "len
+                    2x?", "lenlen" "lenlenloser", "leni", "leni robredo",
+                    "lenirobredo", "lugaw", "lutang", "lutang ina", "lutang ina
+                    mo", "mama", "mama nyo", "mom", "mother", "nanay kong
+                    lutang", "nanay mong lumulutang", "philippines vice
+                    president", "robredog", "saint inamo", "sarili niyang ina"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tricia Robredo</td>
+                  <td>
+                    "tricia", "tricia robredo", "trisha", "trisha robredo",
+                    "vice president daughter", "she went straight"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Thinking Pinoy</td>
+                  <td>"tp"</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Groups</i>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>BBM Supporters</td>
+                  <td>"bbm supporters", "maka bbm tao"</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Communists</td>
+                  <td>"CPP", "CPP-NPA-NDF", "komunista"</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Filipino People</td>
+                  <td>
+                    "igorots sa baguio", "igorots", "igorot people", "igorot",
+                    "igorot friends", "igorot native", "ilocano", "kpatid na
+                    igorot", "locals", "taong bayan", "they are good", "they are
+                    respectful", "they value education"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Jillian's Baguio Group</td>
+                  <td>
+                    "grupo ni jilian", "her camp", "her crowd", "team nila
+                    jillian"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Kakampinks</td>
+                  <td>
+                    "baguio fenks", "dilapinks", "dilawkadiri", "dilawan",
+                    "fenks", "kakampikon", "kakampwet", "kakamdogs",
+                    "kakampink", "kakampinks", "kampo ni leni", "pink",
+                    "pinkilawan", ""pinklawan", "supporters nyoga bastos"
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Robredo Family</td>
+                  <td>
+                    "anak ni leni", "anak mo lenlen", "anak ni lenlen", "anak ni
+                    robredo", "daughter of robredo", "daughter of saint",
+                    "daughter of lugaw", "mga robredo", "mga anak niya",
+                    "robredo", "tatlong anak"
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p>
-            insert a table with the format “Entity: Names: Total Number of
-            mentions”
+            Note: The team has accomplished stemming and lemmatization of the
+            tweets. However, this method was discontinued due to poor
+            translation of Google Translate and time considerations. Moreover,
+            translating the tweets in English would lose some valuable data from
+            the tweets. For instance, the invented names for Leni "lugaw" and
+            "lutang" gave rise to adjective and verb derivatives. It is not
+            preferable to translate "lugaw" as porridge and "lumulutang-lutang"
+            as floating.
           </p>
           <DataFeatureCard
             title="The Disinfo Account"
             description="This card attempts to describe the “average” features of an account involved in posting disinformation."
             select_features={{
-              mean: 5,
-              median: 8,
-              mode: 9,
+              "Account type": "Anonymous*",
+              "Most Disinfo Tweets from a Single Account": "3?5?",
+              Location: "Unspecified**",
+              "Median Following": 216,
+              "Median Followers": 212,
             }}
           />
           <p>
@@ -100,9 +245,9 @@ const DataPage = () => {
           </p>
           <p>
             **Location is tagged as unspecified when the twitter user did not
-            share any location, shared a location that cannot be identified with
-            any country, or shared an obscure location. The team labeled
-            locations with countries when applicable.
+            share any location (NULL), shared a location that cannot be
+            identified with any country, or shared an obscure location. The team
+            labeled locations with countries when applicable.
           </p>
           <p>Insert Join Boxplot</p>
           <p>Insert Join Cumulative Line Graph</p>
@@ -120,9 +265,14 @@ const DataPage = () => {
             title="The Disinfo Tweet"
             description="This card attempts to describe the “average” features of an account involved in posting disinformation."
             select_features={{
-              mean: 5,
-              median: 8,
-              mode: 9,
+              "Person with the Most References": "Leni Robredo*",
+              "Tweets with Negative Sentiments to Leni Robredo":
+                "30% of Disinfo Tweets",
+              "Tweets with Negative Sentiments to Bongbong Marcos":
+                "30% of Disinfo Tweets",
+              "Median Tweet Length": "N words",
+              "Median Tweet Engagement": "smth**",
+              "Most Common Content Type": "Rational",
             }}
           />
           <p>
@@ -132,15 +282,15 @@ const DataPage = () => {
           <p>
             **Engagement is the sum of likes, replies, and retweets of a tweet.
           </p>
-          <p>***The most common content type is rational.</p>
           <p>Insert Date posted Boxplot</p>
           <p>
             Similar to the account creation dates, the day of the election takes
             the “zero” value of the x-axis. The tweets are assigned the number
             of days they are posted after the election (most values are
-            negative.) There is one outlier, a tweet posted in 2017. The data is
-            skewed to the right?? Interestingly, some tweets were posted way
-            past the election day.
+            negative.) There is one outlier, a tweet posted in 2017 which was
+            included because there are few data. The data is skewed to the
+            right?? Interestingly, some tweets were posted way past the election
+            day.
           </p>
           <h2>Feature Trends</h2>
           <p>Insert sns.pairplot</p>
@@ -153,11 +303,11 @@ const DataPage = () => {
   );
 };
 
-export default DataPage;
+export default ExplorationPage;
 
 export const Head = () => (
   <>
-    <title>Chismisinfo | Data</title>
+    <title>Chismisinfo | Data Exploration</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );
