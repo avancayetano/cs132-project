@@ -22,7 +22,7 @@ const ProblemPage = (props) => {
           disinformation attacks against her during the campaign period.{" "}
         </p>
 
-        <h2>Research Question</h2>
+        <h2>Focal Research Question</h2>
         <p>
           The researchers ought to identify whether tweets alleging
           disinformation stories to the children of Leni Robredo contain
@@ -44,17 +44,50 @@ const ProblemPage = (props) => {
           Gather tweets consisting of disinformation towards the Robredo sisters
           and scan each for references to the former Vice President herself.
         </p>
-        {/*<h2>Important Sub-problems</h2>
+        <h2>Data Exploration Questions</h2>
         <ol>
-          <li>What are the allegations surrounding the Robredo sisters?</li>
           <li>
-            Who among the sisters is most affected? Could it be due to her
-            popularity?
+            What are the characteristics of the tweets when grouped by
+            disinformation topic?
+            <ol type="a">
+              <li>
+                What are the names associated with disinformation against the
+                Robredo Sisters?
+              </li>
+              <li>How many tweets per topic?</li>
+              <li>When was the first, last tweet of each topic posted?</li>
+              <li>When were the days when each topic was the most trending?</li>
+            </ol>
+          </li>
+          <li>What does the average disinformation tweet look like?</li>
+          <li>What does the average disinformation account look like?</li>
+          <li>
+            How do other features compare with the feature Leni Sentiment?
+            (Feature Trends)
+          </li>
+        </ol>
+        <h2>Data Analysis Questions</h2>
+        <ol>
+          <li>Do the tweets have a negative sentiment against Leni Robredo?</li>
+          <li>Were the disinformation accounts newly created?</li>
+          <li>
+            Do tweets having negative sentiments towards Leni Robredo have a
+            positive sentiment towards Bongbong Marcos?
           </li>
           <li>
-            How does the number of disinformation tweets plot against the date?
-  </li>
-        </ol>*/}
+            Does the cumulative negative sentiment against Leni Robredo have a
+            correlation with the cumulative number of disinformation accounts
+            joining twitter?
+          </li>
+          <li>
+            Do tweets, when grouped according to account popularity, differ in
+            terms of sentiment towards Leni Robredo?
+          </li>
+          <li>
+            Do tweets, when grouped according to engagement, differ in terms of
+            sentiment towards Leni Robredo?
+          </li>
+        </ol>
       </article>
     </BasePage>
   );

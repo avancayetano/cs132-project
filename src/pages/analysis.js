@@ -1,21 +1,21 @@
 import React from "react";
 import BasePage from "../components/BasePage";
 
-const MethodsPage = () => {
+const AnalysisPage = () => {
   return (
-    <BasePage page={"Methods"}>
+    <BasePage page={"Analysis"}>
       <article className="prose lg:prose-xl mx-auto">
-        <h1 className="text-center">Methods</h1>
+        <h1 className="text-center">Data Analysis</h1>
       </article>
     </BasePage>
   );
 };
 
-export default MethodsPage;
+export default AnalysisPage;
 
 export const Head = () => (
   <>
-    <title>Chismisinfo | Methods</title>
+    <title>Chismisinfo | Data Analysis</title>
     <meta name="viewport" content="width=1024"></meta>
   </>
 );

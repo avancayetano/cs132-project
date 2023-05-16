@@ -14,12 +14,12 @@ const Navbar = (props) => {
       link: "/problem",
     },
     {
-      label: "Data",
-      link: "/data",
+      label: "Exploration",
+      link: "/exploration",
     },
     {
-      label: "Methods",
-      link: "/methods",
+      label: "Analysis",
+      link: "/analysis",
     },
     {
       label: "Results",

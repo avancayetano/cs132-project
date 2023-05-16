@@ -14,12 +14,12 @@ const IndexPage = () => {
     {
       label: "Data Collection",
       text: "Not all tweets are created equal. Some are certified chismisinfo. Go to data collection.",
-      link: "/data",
+      link: "/exploration",
     },
     {
-      label: "Methodology",
+      label: "Data Analysis",
       text: "Discussion about the data science methods we utilized can be found here. Go to methodology.",
-      link: "/methods",
+      link: "/analysis",
     },
     {
       label: "Results and Conclusion",
