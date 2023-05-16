@@ -82,7 +82,7 @@ const ExplorationPage = () => {
             referring to. In total, we named 14 relevant entities.
           </p>
           <div className="overflow-x-auto">
-            <table className="table table-compact w-full">
+            <table className="table table-compact w-full text-left">
               <thead>
                 <tr>
                   <th>Entity</th>
@@ -101,8 +101,8 @@ const ExplorationPage = () => {
                 <tr>
                   <td>Aika Robredo</td>
                   <td>
-                    "aika", "aika diri", "aika robredo", "aika rob", "she
-                    admitted"
+                    <p>"aika", "aika diri", "aika robredo", "aika rob", "she</p>
+                    <p>admitted"</p>
                   </td>
                   <td>idk</td>
                 </tr>
@@ -124,31 +124,48 @@ const ExplorationPage = () => {
                 <tr>
                   <td>Jillian Robredo</td>
                   <td>
-                    "jillian robredo", "mrs robredo daughter", "hindot ka",
-                    "jillian", "jillrobredo", "ma am jill"
+                    <p>
+                      "jillian robredo", "mrs robredo daughter", "hindot ka",
+                    </p>
+                    <p>"jillian", "jillrobredo", "ma am jill"</p>
                   </td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Leni Robredo</td>
                   <td>
-                    "kaylenipataytayo", "kaylenitalo", "leni lugaw", "leni
-                    robredog", "lutangina", "mrs robredo", "president leni",
-                    "president leni robredo", "vp leni", "vice president",
-                    "withdrawleni", "fake vp", "fake vp leni", "her mom", "len
-                    2x?", "lenlen" "lenlenloser", "leni", "leni robredo",
-                    "lenirobredo", "lugaw", "lutang", "lutang ina", "lutang ina
-                    mo", "mama", "mama nyo", "mom", "mother", "nanay kong
-                    lutang", "nanay mong lumulutang", "philippines vice
-                    president", "robredog", "saint inamo", "sarili niyang ina"
+                    <p>
+                      "kaylenipataytayo", "kaylenitalo", "leni lugaw", "leni
+                    </p>
+                    <p>
+                      robredog", "lutangina", "mrs robredo", "president leni",
+                    </p>
+                    <p>
+                      "president leni robredo", "vp leni", "vice president",
+                    </p>
+                    <p>
+                      "withdrawleni", "fake vp", "fake vp leni", "her mom", "len
+                    </p>
+                    <p>2x?", "lenlen" "lenlenloser", "leni", "leni robredo",</p>
+                    <p>
+                      "lenirobredo", "lugaw", "lutang", "lutang ina", "lutang
+                      ina
+                    </p>
+                    <p>mo", "mama", "mama nyo", "mom", "mother", "nanay kong</p>
+                    <p>lutang", "nanay mong lumulutang", "philippines vice</p>
+                    <p>
+                      president", "robredog", "saint inamo", "sarili niyang ina"
+                    </p>
                   </td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Tricia Robredo</td>
                   <td>
-                    "tricia", "tricia robredo", "trisha", "trisha robredo",
-                    "vice president daughter", "she went straight"
+                    <p>
+                      "tricia", "tricia robredo", "trisha", "trisha robredo",
+                    </p>
+                    <p>"vice president daughter", "she went straight"</p>
                   </td>
                   <td></td>
                 </tr>
@@ -177,38 +194,52 @@ const ExplorationPage = () => {
                 <tr>
                   <td>Filipino People</td>
                   <td>
-                    "igorots sa baguio", "igorots", "igorot people", "igorot",
-                    "igorot friends", "igorot native", "ilocano", "kpatid na
-                    igorot", "locals", "taong bayan", "they are good", "they are
-                    respectful", "they value education"
+                    <p>
+                      "igorots sa baguio", "igorots", "igorot people", "igorot",
+                    </p>
+                    <p>
+                      "igorot friends", "igorot native", "ilocano", "kpatid na
+                    </p>
+                    <p>
+                      igorot", "locals", "taong bayan", "they are good", "they
+                      are
+                    </p>
+                    <p>respectful", "they value education"</p>
                   </td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Jillian's Baguio Group</td>
                   <td>
-                    "grupo ni jilian", "her camp", "her crowd", "team nila
-                    jillian"
+                    <p>
+                      "grupo ni jilian", "her camp", "her crowd", "team nila
+                    </p>
+                    <p>jillian"</p>
                   </td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Kakampinks</td>
                   <td>
-                    "baguio fenks", "dilapinks", "dilawkadiri", "dilawan",
-                    "fenks", "kakampikon", "kakampwet", "kakamdogs",
-                    "kakampink", "kakampinks", "kampo ni leni", "pink",
-                    "pinkilawan", ""pinklawan", "supporters nyoga bastos"
+                    <p>
+                      "baguio fenks", "dilapinks", "dilawkadiri", "dilawan",
+                    </p>
+                    <p>"fenks", "kakampikon", "kakampwet", "kakamdogs",</p>
+                    <p>"kakampink", "kakampinks", "kampo ni leni", "pink",</p>
+                    <p>"pinkilawan", ""pinklawan", "supporters nyoga bastos"</p>
                   </td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Robredo Family</td>
                   <td>
-                    "anak ni leni", "anak mo lenlen", "anak ni lenlen", "anak ni
-                    robredo", "daughter of robredo", "daughter of saint",
-                    "daughter of lugaw", "mga robredo", "mga anak niya",
-                    "robredo", "tatlong anak"
+                    <p>
+                      "anak ni leni", "anak mo lenlen", "anak ni lenlen", "anak
+                      ni
+                    </p>
+                    <p>robredo", "daughter of robredo", "daughter of saint",</p>
+                    <p>"daughter of lugaw", "mga robredo", "mga anak niya",</p>
+                    <p></p>"robredo", "tatlong anak"
                   </td>
                   <td></td>
                 </tr>
