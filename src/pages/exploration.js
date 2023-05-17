@@ -10,7 +10,7 @@ const ExplorationPage = () => {
           <h1 className="text-center">Data Exploration</h1>
           <h2>Introduction</h2>
           <p>
-            We are able to scrape around 2700 tweets, at least 205 of which are
+            We are able to scrape around 2700 tweets, at least 203 of which are
             disinformation from 158 accounts. Collection of data for this
             project was both done manually and by a scraper. [
             <a href="https://betterprogramming.pub/how-to-scrape-tweets-with-snscrape-90124ed006af">
@@ -63,7 +63,7 @@ const ExplorationPage = () => {
             disinformation tweets were possibly triggered by Jam Magno's tweet
             on April 6, 2022.
           </p>
-          <h3>Names Entangled to the Disinformation Mire</h3>
+          <h3>Names Entangled in the Mire of Disinformation</h3>
           <p>
             There are certain names referring to certain individuals appearing
             in the disinformation tweets.
@@ -112,7 +112,7 @@ const ExplorationPage = () => {
                   <th>Aika Robredo</th>
                   <td>
                     <p>"aika", "aika diri", "aika robredo", "aika rob", "she</p>
-                    <p>admitted"</p>
+                    <p> admitted"</p>
                   </td>
                   <td>34</td>
                 </tr>
@@ -279,7 +279,7 @@ const ExplorationPage = () => {
             description="This card attempts to describe the “average” features of an account involved in posting disinformation."
             select_features={{
               "Account type": "Anonymous*",
-              "Most Disinfo Tweets from a Single Account": "3?5?",
+              "Most Disinfo Tweets from a Single Account": 6,
               Location: "Unspecified**",
               "Median Following": 216,
               "Median Followers": 212,
@@ -316,9 +316,9 @@ const ExplorationPage = () => {
             select_features={{
               "Person with the Most References": "Leni Robredo*",
               "Tweets with Negative Sentiments to Leni Robredo":
-                "30% of Disinfo Tweets",
+                "25% of Disinfo Tweets",
               "Tweets with Negative Sentiments to Bongbong Marcos":
-                "30% of Disinfo Tweets",
+                "8% of Disinfo Tweets",
               "Median Tweet Length": "N words",
               "Median Tweet Engagement": "smth**",
               "Most Common Content Type": "Rational",
