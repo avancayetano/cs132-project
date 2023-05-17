@@ -39,8 +39,7 @@ const TeamPage = () => {
       involve equations. My passion for subjects such as Mathematics and
       Physics has grown lately. I always wonder how I can apply my Computer
       Science knowledge to these two particular fields. I am a student from the 
-      class CS 132 WFX.    
-        .`,
+      class CS 132 WFX.`,
       github: "https://github.com/rj42guez",
     },
   ];

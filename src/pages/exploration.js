@@ -10,6 +10,11 @@ import joined_boxplot from "../graphs/boxplot_acc.png";
 import posted_boxplot from "../graphs/boxplot_post.png";
 import num_feats_pairplot from "../graphs/pairplot_num_features.png";
 import feats_heatmap from "../graphs/twocolor_heatmap.png";
+import baguio from "../images/baguio.png";
+import hagdan from "../images/hagdan.png";
+import quarantine from "../images/quarantine.png";
+import scandal from "../images/scandal.png";
+import other from "../images/others.png";
 
 const ExplorationPage = () => {
   return (
@@ -495,15 +500,15 @@ const ExplorationPage = () => {
                 appearing in the disinformation tweets.
               </p>
               <h4>Names in Baguio Incident</h4>
-              <p>Insert Baguio word cloud</p>
+              <GraphImg image={baguio} />
               <h4>Names in the Scandal Incident</h4>
-              <p>Insert Baguio word cloud</p>
+              <GraphImg image={scandal} />
               <h4>Names in the Quaratine Incident</h4>
-              <p>Insert Baguio word cloud</p>
+              <GraphImg image={quarantine} />
               <h4>Names in the Hagdan Incident</h4>
-              <p>Insert Hagdan word cloud</p>
+              <GraphImg image={hagdan} />
               <h4>Names in Other Incidents</h4>
-              <p>Insert Other word cloud</p>
+              <GraphImg image={other} />
               <p>
                 This was accomplished by tokenizing all the tweets and{" "}
                 <u>manually</u> identifying the entity associated with each
