@@ -66,7 +66,7 @@ const ProblemPage = (props) => {
             (Feature Trends)
           </li>
 
-          <li>
+          {/* <li>
             Do tweets referencing Leni have a negative sentiment towards her?
           </li>
           <li>Were the disinformation accounts newly created?</li>
@@ -81,7 +81,7 @@ const ProblemPage = (props) => {
           <li>
             Do tweets, when grouped according to engagement, differ in terms of
             sentiment towards Leni Robredo?
-          </li>
+          </li> */}
         </ol>
       </article>
     </BasePage>
