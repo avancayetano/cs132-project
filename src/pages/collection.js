@@ -1,6 +1,6 @@
 import React from "react";
 import BasePage from "../components/BasePage";
-
+import { Link } from "gatsby";
 const CollectionPage = () => {
   return (
     <BasePage page={"Collection"}>
@@ -8,7 +8,10 @@ const CollectionPage = () => {
         <h1 className="text-center">Data Collection</h1>
         <section className="text-center">
           The codes corresponding to the processes discussed on this page can be
-          found on this link: <b>INSERT LINK</b>
+          found on this link:{" "}
+          <Link to="https://github.com/avancayetano/chismisinfo-backend/tree/main/scraper">
+            scraper/
+          </Link>
         </section>
         <section>
           <h2>Web Scraping</h2>

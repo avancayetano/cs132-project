@@ -4,17 +4,21 @@ import DataFeatureCard from "../components/DataFeatureCard";
 import { Link } from "gatsby";
 
 import GraphImg from "../components/GraphImg";
-import topics_bar_graph from "../graphs/topics_bar.png";
-import topics_kde from "../graphs/kde.png";
-import joined_boxplot from "../graphs/boxplot_acc.png";
-import posted_boxplot from "../graphs/boxplot_post.png";
-import num_feats_pairplot from "../graphs/pairplot_num_features.png";
-import feats_heatmap from "../graphs/twocolor_heatmap.png";
-import baguio from "../images/baguio.png";
-import hagdan from "../images/hagdan.png";
-import quarantine from "../images/quarantine.png";
-import scandal from "../images/scandal.png";
-import other from "../images/others.png";
+import topics_bar_graph from "../graphs/final/tweets_per_incident.png";
+import topics_kde from "../graphs/final/dist_topic_tweets_across_time.png";
+import leni_sentiment_bins from "../graphs/final/leni_sentiment_tweets_count.png";
+import marcos_sentiment_bins from "../graphs/final/marcos_sentiments_tweets_count.png";
+import joined_boxplot from "../graphs/final/dist_acct_creation_wrt_election.png";
+import posted_boxplot from "../graphs/final/dist_tweet_post_wrt_election.png";
+import leni_sentiment_pairplot from "../graphs/final/pairplot_leni_sentiment.png";
+import has_leni_ref_pairplot from "../graphs/final/pairplot_has_leni_ref.png";
+import feats_heatmap from "../graphs/final/heatmap_num_feats.png";
+import wordcloud_all from "../graphs/final/wordcloud_all.png";
+import wordcloud_baguio from "../graphs/final/wordcloud_baguio.png";
+import wordcloud_scandal from "../graphs/final/wordcloud_scandal.png";
+import wordcloud_quarantine from "../graphs/final/wordcloud_quarantine.png";
+import wordcloud_ladder from "../graphs/final/wordcloud_ladder.png";
+import wordcloud_others from "../graphs/final/wordcloud_others.png";
 
 const ExplorationPage = () => {
   return (
@@ -24,9 +28,12 @@ const ExplorationPage = () => {
           <h1 className="text-center">Data Exploration</h1>
           <section className="text-center">
             The codes corresponding to the processes discussed on this page can
-            be found on this link: <b>INSERT LINK</b>.<br></br>Make sure that
-            you've read the <Link to="/collection">Data Collection</Link> page
-            first.
+            be found on this link:{" "}
+            <Link to="https://github.com/avancayetano/chismisinfo-backend/tree/main/analysis">
+              analysis/
+            </Link>
+            .<br></br>Make sure that you've read the{" "}
+            <Link to="/collection">Data Collection</Link> page first.
           </section>
 
           <h2>Outline</h2>
@@ -72,8 +79,11 @@ const ExplorationPage = () => {
               <h3 id="init-preprocessing">Initial Preprocessing</h3>
               <p className="text-justify">
                 The codes described in this section can be found in{" "}
-                <b>INSERT LINK</b>. Thus, all the functions/methods stated in
-                this section can be found on the linked page.
+                <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/preprocessor.py">
+                  preprocessor.py
+                </Link>
+                . Thus, all the functions/methods stated in this section can be
+                found on the linked page.
               </p>
               <ul>
                 <li>
@@ -305,8 +315,11 @@ const ExplorationPage = () => {
               <h3 id="nlp">Natural Language Processing</h3>
               <p className="text-justify">
                 The codes described in this section can be found in{" "}
-                <b>INSERT LINK</b>. Thus, all the functions/methods stated in
-                this section can be found on the linked page.
+                <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/nlp.py">
+                  nlp.py
+                </Link>
+                . Thus, all the functions/methods stated in this section can be
+                found on the linked page.
               </p>
               <ul>
                 <li>Tokenization and lower casing.</li>
@@ -337,13 +350,22 @@ const ExplorationPage = () => {
                 versions of the tweets. It should be noted that the tweets were
                 translated poorly by the automatic translator.
               </p>
+              <p>
+                But, actually, the group has performed some kind of natural
+                language processing manually. The team has identified the names
+                being mentioned in the disinformation tweets. More about this
+                will be discuss at the latter part of this article below.
+              </p>
             </div>
             <div>
               <h3 id="time-series">Time Series Processing</h3>
               <p className="text-justify">
                 The codes described in this section can be found in{" "}
-                <b>INSERT LINK</b>. Thus, all the functions/methods stated in
-                this section can be found on the linked page.
+                <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/time_series.py">
+                  time_series.py
+                </Link>
+                . Thus, all the functions/methods stated in this section can be
+                found on the linked page.
               </p>
               <ul>
                 <li>
@@ -392,8 +414,11 @@ const ExplorationPage = () => {
           <section>
             <h2 id="feature-analysis">Feature Analysis</h2>
             The codes described in this section can be found in{" "}
-            <b>INSERT LINK</b>. Thus, all the functions/methods stated in this
-            section can be found on the linked page.
+            <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/feature_analysis.py">
+              feature_analysis.py
+            </Link>
+            . Thus, all the functions/methods stated in this section can be
+            found on the linked page.
             <ul>
               <li>
                 Feature selection (see the method <code>feature_selection</code>
@@ -464,6 +489,11 @@ const ExplorationPage = () => {
           </section>
           <section>
             <h2 id="visualization">Visualization</h2>
+            All the plot creation logic can be found in{" "}
+            <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/visualizer.py">
+              visualizer.py
+            </Link>
+            .
             <section>
               <div>
                 <h4>Distribution of Tweets by Topic</h4>
@@ -492,6 +522,23 @@ const ExplorationPage = () => {
                   were possibly triggered by Jam Magno's tweet on April 6, 2022.
                 </p>
               </div>
+              <div>
+                <h4>Distribution of Tweets Across Leni, Marcos Sentiment</h4>
+                <GraphImg image={leni_sentiment_bins} />
+                <GraphImg image={marcos_sentiment_bins} />
+                <p>
+                  The tweets may also be grouped according to their sentiment
+                  towards the presidentiables last 2022 elections.
+                  Interestingly, there are no positive sentiments for Leni
+                  Robredo, and there are no negative sentiments against Bongbong
+                  Marcos. This is reminiscent of a news during the campaign
+                  period.{" "}
+                  <a href="https://www.gmanetwork.com/news/topstories/nation/830939/tsek-ph-92-of-false-info-favorable-to-marcos-96-of-disinformation-vs-robredo-negative/story/">
+                    Tsek.ph: 92% of false info favorable to Marcos, 96% of
+                    disinformation vs Robredo negative
+                  </a>
+                </p>
+              </div>
             </section>
             <section>
               <h3>Names Entangled in the Mire of Disinformation</h3>
@@ -500,15 +547,15 @@ const ExplorationPage = () => {
                 appearing in the disinformation tweets.
               </p>
               <h4>Names in Baguio Incident</h4>
-              <GraphImg image={baguio} />
+              <GraphImg image={wordcloud_baguio} />
               <h4>Names in the Scandal Incident</h4>
-              <GraphImg image={scandal} />
+              <GraphImg image={wordcloud_scandal} />
               <h4>Names in the Quaratine Incident</h4>
-              <GraphImg image={quarantine} />
+              <GraphImg image={wordcloud_quarantine} />
               <h4>Names in the Hagdan Incident</h4>
-              <GraphImg image={hagdan} />
+              <GraphImg image={wordcloud_ladder} />
               <h4>Names in Other Incidents</h4>
-              <GraphImg image={other} />
+              <GraphImg image={wordcloud_others} />
               <p>
                 This was accomplished by tokenizing all the tweets and{" "}
                 <u>manually</u> identifying the entity associated with each
@@ -517,7 +564,15 @@ const ExplorationPage = () => {
                 relevant individuals and groups of people. In the case of
                 ambiguous terms, we referred back to the original tweets to
                 identify the entity the tweets were referring to. In total, we
-                named 14 relevant entities.
+                named 14 relevant entities. The code for vectorization can be
+                found in{" "}
+                <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/names_vectorizer.py">
+                  names_vectorizer.py
+                </Link>
+                . The code for counting references can be found in{" "}
+                <Link to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/count_references.py">
+                  count_references.py
+                </Link>
               </p>
               <p>
                 FUN FACT: Jillian's Baguio group was associated with Karens of
@@ -761,10 +816,8 @@ const ExplorationPage = () => {
                 resulting in the number of months an account has joined after
                 the election (the values are negative). This means that May 2022
                 is the “zero” of the x-axis and an account joining twitter in
-                December 2021 will be assigned the value -5. There are _
-                outliers, data points that are 3 standard deviations away from
-                the mean. The data is skewed to the right.?? All accounts have
-                joined before the elections.
+                December 2021 will be assigned the value -5. The data is skewed
+                to the right. All accounts have joined before the elections.
               </p>
             </section>
             <section>
@@ -797,14 +850,24 @@ const ExplorationPage = () => {
                 the number of days they are posted after the election (most
                 values are negative.) There is one outlier, a tweet posted in
                 2017 which was included because there are few data. The data is
-                skewed to the right?? Interestingly, some tweets were posted way
+                skewed to the right. Interestingly, some tweets were posted way
                 past the election day.
+              </p>
+              <h4>Wordcloud of a Tweet</h4>
+              <GraphImg image={wordcloud_all} />
+              <p>
+                This word cloud shows the names being mentioned in all the
+                disinformation tweets collected by the team. No surprise when
+                the largest word is Robredo and the first names of the women.
+                Although it is reasonable to expect the name "leni," the
+                appearances of the invented caricature names for the former vice
+                president is harrassment in our opinion.
               </p>
             </section>
             <section>
               <h2>Feature Trends</h2>
-              <h3>Features Pairplot</h3>
-              <GraphImg image={num_feats_pairplot} />
+              <h3>Leni Sentiment Pairplot</h3>
+              <GraphImg image={leni_sentiment_pairplot} />
               <p>
                 In most cases, the distribution of the data points do not imply
                 some relationship towards the variable Leni Sentiment. There is
@@ -816,6 +879,13 @@ const ExplorationPage = () => {
                 In this pairplot, the single outlier of
                 diff_date_posted_election was ignored because it obscured the
                 visualization of the graph.
+              </p>
+              <h3>Leni Reference Pairplot</h3>
+              <GraphImg image={has_leni_ref_pairplot} />
+              <p>
+                Similar to the pairplot above, this graph also does not show
+                significant relationship between the variable has_leni_ref and
+                the select features.
               </p>
               <h3>Features Heatmap</h3>
               <GraphImg image={feats_heatmap} />
