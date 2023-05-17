@@ -11,6 +11,13 @@ module.exports = {
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "100ch",
+          },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

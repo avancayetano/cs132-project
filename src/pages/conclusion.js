@@ -1,17 +1,17 @@
 import React from "react";
 import BasePage from "../components/BasePage";
 
-const ResultsPage = () => {
+const ConclusionPage = () => {
   return (
-    <BasePage page={"Results"}>
+    <BasePage page={"Conclusion"}>
       <article className="prose lg:prose-xl mx-auto">
-        <h1 className="text-center">Results</h1>
+        <h1 className="text-center">Conclusion</h1>
       </article>
     </BasePage>
   );
 };
 
-export default ResultsPage;
+export default ConclusionPage;
 
 export const Head = () => (
   <>

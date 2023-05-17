@@ -6,7 +6,8 @@ const AnalysisPage = () => {
     <BasePage page={"Analysis"}>
       <article className="prose lg:prose-xl mx-auto">
         <h1 className="text-center">Data Analysis</h1>
-        <h2>Focal Research Question</h2>
+        <p>Work in progress.</p>
+        {/* <h2>Focal Research Question</h2>
         <h4>
           Do tweets referencing Leni have a negative sentiment towards her?
         </h4>
@@ -14,7 +15,7 @@ const AnalysisPage = () => {
           In this problem, we have a categorical independent variable and a
           categorical dependent variable, both of which are boolean. Therefore,
           the Chi Square of Independence should be applied.
-        </p>
+        </p> */}
         <table>
           <tr>
             <td></td>

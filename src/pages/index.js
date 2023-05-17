@@ -8,29 +8,78 @@ const IndexPage = () => {
   const headings = [
     {
       label: "Problem Formulation",
-      text: "In this section we will discuss the main goal of the study. Go to statement of the problem.",
+      text: (
+        <>
+          <b>Chismisinformation</b> is a big problem. Unfortunately, with the
+          rise of social media, chismisinformation has evolved to become an even
+          bigger of a problem. This is why we want to fight this. In this
+          section, we discuss the main goal of the study and the questions we
+          want to answer.
+        </>
+      ),
       link: "/problem",
     },
     {
       label: "Data Collection",
-      text: "Not all tweets are created equal. Some are certified chismisinfo. Go to data collection.",
+      text: (
+        <>
+          Before we fight the problem of chismisinformation, we have to prove
+          first that such problem exists. Hence, in this section, we discuss how
+          we collected our data, and how we identified and labeled a number of
+          misinformation tweets.
+        </>
+      ),
+      link: "/collection",
+    },
+
+    {
+      label: "Data Exploration",
+      text: (
+        <>
+          Not all tweets are created equal. Some are certified{" "}
+          <b>certified chismisinfo</b>. In this section, we explore the
+          different characteristics of these so-called 'certified chismisinfo'
+          tweets, as well as the patterns and trends occuring among these
+          'features'.
+        </>
+      ),
       link: "/exploration",
     },
     {
       label: "Data Analysis",
-      text: "Discussion about the data science methods we utilized can be found here. Go to methodology.",
+      text: (
+        <>
+          <b>Chismisinformation</b> is a monster of a problem. This is why we
+          need a powerful weapon to fight this. Fortunately, our Data Science
+          course has provided us with methods such as statistical tests and
+          machine learning models that we can use to annihilate this problem.
+        </>
+      ),
       link: "/analysis",
     },
     {
-      label: "Results and Conclusion",
-      text: "From data we gain information and insight through interpretation. Go to results and conclusion.",
-      link: "/results",
+      label: "Conclusion",
+      text: (
+        <>
+          In this section, we provide insights and interpretations of the
+          results we obtained from our analysis. We are also hoping that our
+          insights would encourage everyone to join the fight against
+          dis/misinformation.
+        </>
+      ),
+      link: "/conclusion",
     },
-    //{
-    //label: "About",
-    //text: "Check out our about page.",
-    //link: "/team"
-    //}
+    {
+      label: "About Us",
+      text: (
+        <>
+          We are the <b>Chismisinformation Team</b>; the destroyer of fake news,
+          the devourer of chismis, the terminator of dis/misinformation,{" "}
+          <b>the obliterator of chismisinfo</b>. Get to know more about us.
+        </>
+      ),
+      link: "/about",
+    },
   ];
 
   const OverviewHeading = (props) => {
@@ -44,7 +93,7 @@ const IndexPage = () => {
             {props.label}
           </Link>
         </h3>
-        <p>{props.text + " "}</p>
+        <div className="text-justify">{props.text}</div>
       </div>
     );
   };
@@ -76,7 +125,7 @@ const IndexPage = () => {
             </h2>
             <div className="container mx-auto mt-16 p-4 w-full">
               <div className="mx-auto">
-                <article className="prose lg:prose-xl prose-a:text-blue-600 mx-auto">
+                <article className="prose lg:prose-xl prose-a:text-blue-600 mx-auto max-w-prose">
                   <h2 className="mb-4 font-extrabold leading-none tracking-tight">
                     Abstract
                   </h2>
@@ -107,7 +156,7 @@ const IndexPage = () => {
       </div>
       <div className="divider w-4/5 mx-auto mb-8"></div>
       <div className="container mx-auto w-max">
-        <article className="prose lg:prose-xl mx-auto max-w-none">
+        <article className="prose lg:prose-xl mx-auto">
           <h2 className="py-0 my-0">Outline</h2>
           <div className="">
             <ul className="py-0">
@@ -120,15 +169,6 @@ const IndexPage = () => {
           </div>
         </article>
       </div>
-      {/* <div className="divider"></div>
-      <div className="container mx-auto w-3/5">
-        <article className="prose max-w-none">
-          <h1 className="text-center">About</h1>
-          <p className="text-justify">
-            Check out our <Link to="about">about</Link> page.
-          </p>
-        </article>
-      </div> */}
     </BasePage>
   );
 };

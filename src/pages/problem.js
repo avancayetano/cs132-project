@@ -44,7 +44,7 @@ const ProblemPage = (props) => {
           Gather tweets consisting of disinformation towards the Robredo sisters
           and scan each for references to the former Vice President herself.
         </p>
-        <h2>Data Exploration Questions</h2>
+        <h2 id="exploration-questions">Data Exploration Questions</h2>
         <ol>
           <li>
             What are the characteristics of the tweets when grouped by
@@ -65,9 +65,7 @@ const ProblemPage = (props) => {
             How do other features compare with the feature Leni Sentiment?
             (Feature Trends)
           </li>
-        </ol>
-        <h2>Data Analysis Questions</h2>
-        <ol>
+
           <li>
             Do tweets referencing Leni have a negative sentiment towards her?
           </li>

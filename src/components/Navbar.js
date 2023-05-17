@@ -14,6 +14,10 @@ const Navbar = (props) => {
       link: "/problem",
     },
     {
+      label: "Collection",
+      link: "/collection",
+    },
+    {
       label: "Exploration",
       link: "/exploration",
     },
@@ -22,8 +26,8 @@ const Navbar = (props) => {
       link: "/analysis",
     },
     {
-      label: "Results",
-      link: "/results",
+      label: "Conclusion",
+      link: "/conclusion",
     },
     {
       label: "About",
