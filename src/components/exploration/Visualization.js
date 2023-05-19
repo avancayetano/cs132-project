@@ -31,6 +31,12 @@ const Visualization = () => {
       .
       <section>
         <div>
+          <h4>Time Series of Joined Accounts By Month</h4>
+          <ExtLink to="https://chart-studio.plotly.com/~rj42guez/1/#/">
+            <center>Link to Time Series Line Graph</center>
+          </ExtLink>
+        </div>
+        <div>
           <h4>Distribution of Tweets by Topic</h4>
           <Image image={topics_bar_graph} width="w-1/2" />
         </div>
