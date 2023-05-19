@@ -4,7 +4,7 @@ const GraphImg = (props) => {
   return (
     <div className="content-center">
       <figure>
-        <img src={props.image} />
+        <img className={`m-auto ${props.width}`} src={props.image} />
       </figure>
     </div>
   );

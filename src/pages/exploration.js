@@ -4,21 +4,21 @@ import DataFeatureCard from "../components/DataFeatureCard";
 import { Link } from "gatsby";
 
 import GraphImg from "../components/GraphImg";
-import topics_bar_graph from "../graphs/final/tweets_per_incident.png";
-import topics_kde from "../graphs/final/dist_topic_tweets_across_time.png";
-import leni_sentiment_bins from "../graphs/final/leni_sentiment_tweets_count.png";
-import marcos_sentiment_bins from "../graphs/final/marcos_sentiments_tweets_count.png";
-import joined_boxplot from "../graphs/final/dist_acct_creation_wrt_election.png";
-import posted_boxplot from "../graphs/final/dist_tweet_post_wrt_election.png";
-import leni_sentiment_pairplot from "../graphs/final/pairplot_leni_sentiment.png";
-import has_leni_ref_pairplot from "../graphs/final/pairplot_has_leni_ref.png";
-import feats_heatmap from "../graphs/final/heatmap_num_feats.png";
-import wordcloud_all from "../graphs/final/wordcloud_all.png";
-import wordcloud_baguio from "../graphs/final/wordcloud_baguio.png";
-import wordcloud_scandal from "../graphs/final/wordcloud_scandal.png";
-import wordcloud_quarantine from "../graphs/final/wordcloud_quarantine.png";
-import wordcloud_ladder from "../graphs/final/wordcloud_ladder.png";
-import wordcloud_others from "../graphs/final/wordcloud_others.png";
+import topics_bar_graph from "../graphs/exploration/tweets_per_incident.png";
+import topics_kde from "../graphs/exploration/dist_topic_tweets_across_time.png";
+import leni_sentiment_bins from "../graphs/exploration/leni_sentiment_tweets_count.png";
+import marcos_sentiment_bins from "../graphs/exploration/marcos_sentiments_tweets_count.png";
+import joined_boxplot from "../graphs/exploration/dist_acct_creation_wrt_election.png";
+import posted_boxplot from "../graphs/exploration/dist_tweet_post_wrt_election.png";
+import leni_sentiment_pairplot from "../graphs/exploration/pairplot_leni_sentiment.png";
+import has_leni_ref_pairplot from "../graphs/exploration/pairplot_has_leni_ref.png";
+import feats_heatmap from "../graphs/exploration/heatmap_num_feats.png";
+import wordcloud_all from "../graphs/exploration/wordcloud_all.png";
+import wordcloud_baguio from "../graphs/exploration/wordcloud_baguio.png";
+import wordcloud_scandal from "../graphs/exploration/wordcloud_scandal.png";
+import wordcloud_quarantine from "../graphs/exploration/wordcloud_quarantine.png";
+import wordcloud_ladder from "../graphs/exploration/wordcloud_ladder.png";
+import wordcloud_others from "../graphs/exploration/wordcloud_others.png";
 
 const ExplorationPage = () => {
   return (
@@ -301,7 +301,7 @@ const ExplorationPage = () => {
                     {"{'I', 'R', 'T', 'U', 'V'}"} sorted lexicographically,
                     which is 32 combinations in total (thus, 32 possible
                     tweet_type_codes). What this means is that we can map each
-                    32 codes/combinations to integers from 0 to 1. This mapping
+                    32 codes/combinations to integers from 0 to 31. This mapping
                     is then used to convert a tweet_type_code to its
                     corresponding numerical value. <br></br>
                     The same process goes for the content_type_code (where the
