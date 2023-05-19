@@ -1,14 +1,16 @@
 import React from "react";
 
+import { Twitter } from "react-feather";
+
 const DataFeatureCard = (props) => {
   return (
     <>
       <div className="card card-side bg-base-100 shadow-xl">
         <div className="card-body text-justify">
+          <Twitter></Twitter>
           <h2 className="card-title">
             FEATURING:
-            <br />
-            {props.title}
+            <br /> {props.title}
           </h2>
           <p>{props.description}</p>
           <div className="overflow-x-auto">
