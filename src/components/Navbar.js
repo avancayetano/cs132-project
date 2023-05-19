@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 import logo from "../images/logo circle.png";
 
@@ -62,8 +62,11 @@ const Navbar = (props) => {
         <ul className="menu menu-horizontal px-1">
           {tabs.map((tab) => (
             <li key={tab.label}>
-              <Link
-                to={tab.link}
+              <div
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  navigate(tab.link);
+                }}
                 className={
                   (props.page === tab.label
                     ? "btn btn-primary text-white "
@@ -71,7 +74,7 @@ const Navbar = (props) => {
                 }
               >
                 {tab.label}
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

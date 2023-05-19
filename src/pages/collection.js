@@ -1,6 +1,7 @@
 import React from "react";
 import BasePage from "../components/BasePage";
-import { Link } from "gatsby";
+import ExtLink from "../components/ExtLink";
+
 const CollectionPage = () => {
   return (
     <BasePage page={"Collection"}>
@@ -9,17 +10,17 @@ const CollectionPage = () => {
         <section className="text-center">
           The codes corresponding to the processes discussed on this page can be
           found on this link:{" "}
-          <Link to="https://github.com/avancayetano/chismisinfo-backend/tree/main/scraper">
+          <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/tree/main/scraper">
             scraper/
-          </Link>
+          </ExtLink>
         </section>
         <section>
           <h2>Web Scraping</h2>
           <p className="text-justify">
             Using the web scraping tool called{" "}
-            <a href="https://github.com/JustAnotherArchivist/snscrape">
+            <ExtLink to="https://github.com/JustAnotherArchivist/snscrape">
               snscrape
-            </a>
+            </ExtLink>
             , we were able to scrape 2,730 unique tweets. Unfortunately, due to
             time constraints, we were not able to review and classify each
             scraped tweet whether it is a misinformation tweet or not. However,

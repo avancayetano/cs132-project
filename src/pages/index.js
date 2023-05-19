@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import BasePage from "../components/BasePage";
+import ExtLink from "../components/ExtLink";
 
 // The Overview page
 const IndexPage = () => {
@@ -135,14 +136,14 @@ const IndexPage = () => {
                     period, defamation through disinformation (has often been
                     done/is typical) against Leni Robredo, a strong contender
                     for the presidency{" "}
-                    <a href="https://www.rappler.com/moveph/election-disinformation-efforts-target-robredo-image-boost-marcos-jr-tsek-ph-study/">
+                    <ExtLink to="https://www.rappler.com/moveph/election-disinformation-efforts-target-robredo-image-boost-marcos-jr-tsek-ph-study/">
                       [Chua, 2022]
-                    </a>
+                    </ExtLink>
                     . Even the three children of Robredo were victims of
                     disinformation up to the point of sexual harassment{" "}
-                    <a href="https://www.rappler.com/nation/elections/aika-robredo-seeks-nbi-assistance-fake-video-scandal-issue/">
+                    <ExtLink to="https://www.rappler.com/nation/elections/aika-robredo-seeks-nbi-assistance-fake-video-scandal-issue/">
                       [Bolledo, 2022]
-                    </a>
+                    </ExtLink>
                     . This study aims to detail, analyze, and interpret
                     malicious tweets which declare disinformation about Jessica
                     Marie "Aika" Robredo, Janine Patricia "Tricia" Robredo, and

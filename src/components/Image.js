@@ -1,6 +1,6 @@
 import React from "react";
 
-const GraphImg = (props) => {
+const Image = (props) => {
   return (
     <div className="content-center">
       <figure>
@@ -10,4 +10,4 @@ const GraphImg = (props) => {
   );
 };
 
-export default GraphImg;
+export default Image;

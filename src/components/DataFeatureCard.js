@@ -4,16 +4,11 @@ const DataFeatureCard = (props) => {
   return (
     <>
       <div className="card card-side bg-base-100 shadow-xl">
-        <figure className="w-10 h-0 items-center">
-          <img
-            src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo-700x394.png"
-            alt="Movie"
-          />
-        </figure>
         <div className="card-body text-justify">
           <h2 className="card-title">
             FEATURING:
-            <br /> {props.title}
+            <br />
+            {props.title}
           </h2>
           <p>{props.description}</p>
           <div className="overflow-x-auto">
@@ -22,11 +17,11 @@ const DataFeatureCard = (props) => {
               <thead></thead>
               <tbody>
                 {/* row 1 */}
-                {Object.getOwnPropertyNames(props.select_features).map(
-                  (select_feature) => (
-                    <tr key={select_feature.name}>
-                      <td>{select_feature}</td>
-                      <td>{props.select_features[select_feature]}</td>
+                {Object.getOwnPropertyNames(props.selectFeatures).map(
+                  (selectFeature) => (
+                    <tr key={selectFeature.name}>
+                      <td>{selectFeature}</td>
+                      <td>{props.selectFeatures[selectFeature]}</td>
                     </tr>
                   )
                 )}

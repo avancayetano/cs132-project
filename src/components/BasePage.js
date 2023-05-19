@@ -14,6 +14,9 @@ const BasePage = (props) => {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-base-100 text-base-content">
           <li>
+            <div className="font-bold btn-disabled bg-transparent">Outline</div>
+          </li>
+          <li>
             <div>Sidebar Item 1</div>
           </li>
           <li>
