@@ -42,7 +42,7 @@ const NaturalLanguage = () => {
       </p>
       <p>
         But, actually, the group has performed some kind of natural language
-        processing manually. The team has identified the names being mentioned
+        processing manually. The team has identified the aliases being mentioned
         in the disinformation tweets. More about this will be discuss at the
         latter part of this article below.
       </p>
