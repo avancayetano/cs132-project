@@ -20,8 +20,9 @@ import wordcloud_scandal from "../../graphs/exploration/wordcloud_scandal.png";
 import wordcloud_quarantine from "../../graphs/exploration/wordcloud_quarantine.png";
 import wordcloud_ladder from "../../graphs/exploration/wordcloud_ladder.png";
 import wordcloud_others from "../../graphs/exploration/wordcloud_others.png";
-import leni_sentiment_graph from "../../graphs/exploration/leni_sentiment_graph.png";
+import leni_sentiment_graph2 from "../../graphs/exploration/leni_sentiment_graph2.png";
 import leni_sentiment_doublehisto from "../../graphs/exploration/leni_sentiment_doublehisto.png";
+import lxrscatter from "../../graphs/exploration/lxrscatter.png";
 
 const Visualization = () => {
   return (
@@ -48,12 +49,18 @@ const Visualization = () => {
         </div>
         <div>
           <h4>Distribution of Tweets With Negative Leni-Sentiment per Day</h4>
-          <Image image={leni_sentiment_graph} width="w-5/5" />
+          <iframe
+            width="900"
+            height="800"
+            frameborder="0"
+            scrolling="no"
+            src="//plotly.com/~rj42guez/9.embed"
+          ></iframe>
           <p>
             This line graph was made using seaborn. It is interesting to note
-            that the highest increase in the number of tweets with negative Leni
-            sentiment occurred starting on the 26th of April 2022, also before
-            the 2022 Elections.
+            that the highest number of posted tweets with negative Leni
+            sentiment occurred on the 27th of April 2022, also before the 2022
+            Elections.
           </p>
         </div>
         <div>
@@ -99,6 +106,11 @@ const Visualization = () => {
             </ExtLink>
           </p>
         </div>
+      </section>
+      <section>
+        <h3>Graphs Created From The Control Dataset</h3>
+        <h4>Likes vs Retweets Scatterplot</h4>
+        <Image image={lxrscatter} />
       </section>
       <section>
         <h3>Names Entangled in the Mire of Disinformation</h3>
