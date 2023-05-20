@@ -20,6 +20,7 @@ import wordcloud_scandal from "../../graphs/exploration/wordcloud_scandal.png";
 import wordcloud_quarantine from "../../graphs/exploration/wordcloud_quarantine.png";
 import wordcloud_ladder from "../../graphs/exploration/wordcloud_ladder.png";
 import wordcloud_others from "../../graphs/exploration/wordcloud_others.png";
+import leni_sentiment_graph from "../../graphs/exploration/leni_sentiment_graph.png";
 
 const Visualization = () => {
   return (
@@ -31,7 +32,7 @@ const Visualization = () => {
       .
       <section>
         <div>
-          <h4>Time Series of Joined Accounts By Month</h4>
+          <h4>Distribution of Accounts That Joined Twitter per Month</h4>
           <iframe
             width="900"
             height="800"
@@ -42,6 +43,16 @@ const Visualization = () => {
             This line graph was made using plotly. Here, you can see that the
             number of accounts that joined is highest in April 2022 (48
             accounts), which is just before the 2022 Elections.
+          </p>
+        </div>
+        <div>
+          <h4>Distribution of Tweets With Negative Leni-Sentiment per Day</h4>
+          <Image image={leni_sentiment_graph} width="w-5/5" />
+          <p>
+            This line graph was made using seaborn. It is interesting to note
+            that the highest increase in the number of tweets with negative Leni
+            sentiment occurred starting on the 26th of April 2022, also before
+            the 2022 Elections.
           </p>
         </div>
         <div>
