@@ -60,7 +60,8 @@ const Visualization = () => {
             This line graph was made using seaborn. It is interesting to note
             that the highest number of posted tweets with negative Leni
             sentiment occurred on the 27th of April 2022, also before the 2022
-            Elections.
+            Elections. Moreover, most of the tweets that are labeled 'Negative'
+            in the leni_sentiment column were generated in 2022.
           </p>
         </div>
         <div>
