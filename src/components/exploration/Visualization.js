@@ -64,17 +64,17 @@ const Visualization = () => {
           </p>
         </div>
         <div>
-          <h4>Distribution of Tweets by Topic</h4>
+          <h4>Distribution of Tweets by Disinformation Incident</h4>
           <Image image={topics_bar_graph} width="w-1/2" />
         </div>
         <div>
-          <h4>Distribution of Topic Tweets per Day</h4>
+          <h4>Distribution of Incident Tweets per Day</h4>
           <Image image={topics_kde} width="w-4/5" />
           <p>
-            It is also interesting to graph and observe when each topic was the
-            most popular. Interestingly, each disinformation topic only has one
-            peak, or have peaks that are relatively close enough which means
-            that the tweets were categorized nicely. Kindly refer to the{" "}
+            It is also interesting to graph and observe when each incident was
+            the most popular. Interestingly, each disinformation incident only
+            has one peak, or have peaks that are relatively close enough which
+            means that the tweets were categorized nicely. Kindly refer to the{" "}
             <Link to="/collection">Data Collection</Link> page for more
             information about the items in the graph legend.
           </p>
@@ -118,7 +118,7 @@ const Visualization = () => {
           There are certain names referring to certain individuals appearing in
           the disinformation tweets.
         </p>
-        <h4>Names in Baguio Incident</h4>
+        <h4>Names in the Baguio Incident</h4>
         <Image image={wordcloud_baguio} />
         <h4>Names in the Scandal Incident</h4>
         <Image image={wordcloud_scandal} />
@@ -129,19 +129,34 @@ const Visualization = () => {
         <h4>Names in Other Incidents</h4>
         <Image image={wordcloud_others} />
         <p>
-          This was accomplished by tokenizing all the tweets and <u>manually</u>{" "}
-          identifying the entity associated with each token. We have collected
-          more than 9000 1-gram, 2-gram, and 3-gram tokens and labeled about a
-          hundred as referring to relevant individuals and groups of people. In
-          the case of ambiguous terms, we referred back to the original tweets
-          to identify the entity the tweets were referring to. In total, we
-          named 14 relevant entities. The code for vectorization can be found in{" "}
-          <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/names_vectorizer.py">
+          The largest aliases appearing in the word clouds are the victims of
+          the corresponding disinformation incident, which is the Robredo
+          family. Naturally, the key words appearing are dependent on the
+          situation and nature of the incidents. In the Baguio incident, most
+          tweets are talking about the Kakampinks by calling them names such as
+          "kakapwet", "pinklawan", and "kakampikon." In the Ladder incident,
+          there were fewer names because Jam Magno's tweet is not easily
+          believable and that the incident was short-lived.
+        </p>
+        <p>
+          Now, it is interesting to observe the medium-size aliases. No
+          disinformation incident fell short in mentioning Leni Robredo and her
+          aliases such as "lutang" and "lugaw." This is a confirmation of the
+          real world observation of the team, that Leni Robredo was being
+          implicated in most disinformation incident which is most notable in
+          the Quarantine incident.
+        </p>
+        <p>
+          The word clouds were accomplished by tokenizing all the tweets and{" "}
+          <u>manually</u> identifying the entity associated with each token. We
+          have collected more than 9000 1-gram, 2-gram, and 3-gram tokens and
+          labeled about a hundred as referring to relevant individuals and
+          groups of people. In the case of ambiguous terms, we referred back to
+          the original tweets to identify the entity the tweets were referring
+          to. In total, we named 14 relevant entities. The code for
+          vectorization and counting references can be found in{" "}
+          <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/misc_computations.py">
             names_vectorizer.py
-          </ExtLink>
-          . The code for counting references can be found in{" "}
-          <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/count_references.py">
-            count_references.py
           </ExtLink>
         </p>
         <p>
@@ -153,7 +168,7 @@ const Visualization = () => {
             <thead>
               <tr>
                 <th className="text-center">Entity</th>
-                <th className="text-center">Names</th>
+                <th className="text-center">Aliases</th>
                 <th className="text-center">Number of References*</th>
               </tr>
             </thead>
@@ -312,7 +327,7 @@ const Visualization = () => {
           tweets. However, this method was discontinued due to poor translation
           of Google Translate and time considerations. Moreover, translating the
           tweets in English would lose some valuable data from the tweets. For
-          instance, the invented names for Leni "lugaw" and "lutang" gave rise
+          instance, the invented aliases for Leni "lugaw" and "lutang" gave rise
           to adjective and verb derivatives. It is not preferable to translate
           "lugaw" as porridge and "lumulutang-lutang" as floating.
         </p>
@@ -388,7 +403,7 @@ const Visualization = () => {
         <h4>Wordcloud of a Tweet</h4>
         <Image image={wordcloud_all} />
         <p>
-          This word cloud shows the names being mentioned in all the
+          This word cloud shows the aliases being mentioned in all the
           disinformation tweets collected by the team. No surprise when the
           largest word is Robredo and the first names of the women. Although it
           is reasonable to expect the name "leni," the appearances of the
