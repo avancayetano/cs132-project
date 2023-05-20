@@ -38,6 +38,11 @@ const Visualization = () => {
             frameborder="0"
             src="//plotly.com/~rj42guez/1.embed"
           ></iframe>
+          <p>
+            This line graph was made using plotly. Here, you can see that the
+            number of accounts that joined is highest in April 2022 (48
+            accounts), which is just before the 2022 Elections.
+          </p>
         </div>
         <div>
           <h4>Distribution of Tweets by Topic</h4>
