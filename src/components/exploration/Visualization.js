@@ -20,8 +20,7 @@ import wordcloud_scandal from "../../graphs/exploration/wordcloud_scandal.png";
 import wordcloud_quarantine from "../../graphs/exploration/wordcloud_quarantine.png";
 import wordcloud_ladder from "../../graphs/exploration/wordcloud_ladder.png";
 import wordcloud_others from "../../graphs/exploration/wordcloud_others.png";
-import leni_sentiment_graph2 from "../../graphs/exploration/leni_sentiment_graph2.png";
-import leni_sentiment_doublehisto from "../../graphs/exploration/leni_sentiment_doublehisto.png";
+import sentiment_doublehisto from "../../graphs/exploration/sentiment_doublehisto.png";
 import lxrscatter from "../../graphs/exploration/lxrscatter.png";
 
 const Visualization = () => {
@@ -94,7 +93,7 @@ const Visualization = () => {
           <h4>Distribution of Tweets Across Leni, Marcos Sentiment</h4>
           <Image image={leni_sentiment_bins} />
           <Image image={marcos_sentiment_bins} />
-          <Image image={leni_sentiment_doublehisto} />
+          <Image image={sentiment_doublehisto} />
           <p>
             The tweets may also be grouped according to their sentiment towards
             the presidentiables last 2022 elections. Interestingly, there are no
