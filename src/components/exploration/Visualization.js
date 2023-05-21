@@ -7,8 +7,6 @@ import Image from "../Image";
 
 import topics_bar_graph from "../../graphs/exploration/tweets_per_incident.png";
 import topics_kde from "../../graphs/exploration/dist_topic_tweets_across_time.png";
-import leni_sentiment_bins from "../../graphs/exploration/leni_sentiment_tweets_count.png";
-import marcos_sentiment_bins from "../../graphs/exploration/marcos_sentiments_tweets_count.png";
 import joined_boxplot from "../../graphs/exploration/dist_acct_creation_wrt_election.png";
 import posted_boxplot from "../../graphs/exploration/dist_tweet_post_wrt_election.png";
 import leni_sentiment_pairplot from "../../graphs/exploration/pairplot_leni_sentiment.png";
@@ -20,52 +18,39 @@ import wordcloud_scandal from "../../graphs/exploration/wordcloud_scandal.png";
 import wordcloud_quarantine from "../../graphs/exploration/wordcloud_quarantine.png";
 import wordcloud_ladder from "../../graphs/exploration/wordcloud_ladder.png";
 import wordcloud_others from "../../graphs/exploration/wordcloud_others.png";
-import sentiment_doublehisto from "../../graphs/exploration/sentiment_doublehisto.png";
+import leni_marcos_sentiment from "../../graphs/exploration/sentiment_doublehisto.png";
 import lxrscatter from "../../graphs/exploration/lxrscatter.png";
 
 const Visualization = () => {
   return (
     <div>
-      All the plot creation logic can be found in{" "}
-      <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/visualizer.py">
-        visualizer.py
-      </ExtLink>
-      .
+      <p>
+        In this section, the results of data exploration are presented through
+        different graphs. All the plot creation logic can be found in{" "}
+        <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/visualizer.py">
+          visualizer.py
+        </ExtLink>
+        .
+      </p>
       <section>
-        <div>
-          <h4>Distribution of Accounts That Joined Twitter per Month</h4>
-          <iframe
-            width="900"
-            height="800"
-            frameborder="0"
-            src="//plotly.com/~rj42guez/1.embed"
-          ></iframe>
-          <p>
-            This line graph was made using plotly. Here, you can see that the
-            number of accounts that joined is highest in April 2022 (48
-            accounts), which is just before the 2022 Elections.
-          </p>
-        </div>
-        <div>
-          <h4>Distribution of Tweets With Negative Leni-Sentiment per Day</h4>
-          <iframe
-            width="900"
-            height="800"
-            frameborder="0"
-            scrolling="no"
-            src="//plotly.com/~rj42guez/9.embed"
-          ></iframe>
-          <p>
-            This line graph was made using seaborn. It is interesting to note
-            that the highest number of posted tweets with negative Leni
-            sentiment occurred on the 27th of April 2022, also before the 2022
-            Elections. Moreover, most of the tweets that are labeled 'Negative'
-            in the leni_sentiment column were generated in 2022.
-          </p>
-        </div>
         <div>
           <h4>Distribution of Tweets by Disinformation Incident</h4>
           <Image image={topics_bar_graph} width="w-1/2" />
+          <p>
+            It is important to note that it has been several months after the
+            2022 elections. Therefore, the collected data is prone to
+            survivorship bias. Due to the fact-checking community, it is
+            reasonable to think that disinformation tweets have already been
+            deleted.
+          </p>
+          <p>
+            The data collection methodology should also be put into
+            consideration. The team looked up fact-checking articles involving
+            the Robredo sisters and created the tweet keywords from the
+            articles. This implies that the bar graph above, the distribution of
+            tweets across disinformation incidents, may not reflect the actual
+            extent of the allegations.
+          </p>
         </div>
         <div>
           <h4>Distribution of Incident Tweets per Day</h4>
@@ -91,9 +76,7 @@ const Visualization = () => {
         </div>
         <div>
           <h4>Distribution of Tweets Across Leni, Marcos Sentiment</h4>
-          <Image image={leni_sentiment_bins} />
-          <Image image={marcos_sentiment_bins} />
-          <Image image={sentiment_doublehisto} />
+          <Image image={leni_marcos_sentiment} />
           <p>
             The tweets may also be grouped according to their sentiment towards
             the presidentiables last 2022 elections. Interestingly, there are no
@@ -124,7 +107,7 @@ const Visualization = () => {
         <Image image={wordcloud_scandal} />
         <h4>Names in the Quaratine Incident</h4>
         <Image image={wordcloud_quarantine} />
-        <h4>Names in the Hagdan Incident</h4>
+        <h4>Names in the Ladder Incident</h4>
         <Image image={wordcloud_ladder} />
         <h4>Names in Other Incidents</h4>
         <Image image={wordcloud_others} />
@@ -358,6 +341,22 @@ const Visualization = () => {
           applicable. Twitter accounts who have not shared their location were
           ignored.
         </p>
+        <div className="mx-auto">
+          <h4>Distribution of Accounts That Joined Twitter per Month</h4>
+          <div className="mx-auto">
+            <iframe
+              width="900"
+              height="800"
+              frameborder="0"
+              src="//plotly.com/~rj42guez/1.embed"
+            ></iframe>
+          </div>
+          <p>
+            This line graph was made using plotly. Here, you can see that the
+            number of accounts that joined is highest in April 2022 (48
+            accounts), which is just before the 2022 Elections.
+          </p>
+        </div>
         <Image image={joined_boxplot} />
         <p>
           All account creation dates were compared to the election date
@@ -400,6 +399,25 @@ const Visualization = () => {
           because there are few data. The data is skewed to the right.
           Interestingly, some tweets were posted way past the election day.
         </p>
+        <div>
+          <h4>Distribution of Tweets With Negative Leni-Sentiment per Day</h4>
+          <div className="mx-auto">
+            <iframe
+              width="900"
+              height="800"
+              frameborder="0"
+              scrolling="no"
+              src="//plotly.com/~rj42guez/9.embed"
+            ></iframe>
+          </div>
+          <p>
+            This line graph was made using seaborn. It is interesting to note
+            that the highest number of posted tweets with negative Leni
+            sentiment occurred on the 27th of April 2022, also before the 2022
+            Elections. Moreover, most of the tweets that are labeled 'Negative'
+            in the leni_sentiment column were generated in 2022.
+          </p>
+        </div>
         <h4>Wordcloud of a Tweet</h4>
         <Image image={wordcloud_all} />
         <p>
