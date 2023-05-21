@@ -91,11 +91,6 @@ const Visualization = () => {
         </div>
       </section>
       <section>
-        <h3>Graphs Created From The Control Dataset</h3>
-        <h4>Likes vs Retweets Scatterplot</h4>
-        <Image image={lxrscatter} />
-      </section>
-      <section>
         <h3>Names Entangled in the Mire of Disinformation</h3>
         <p>
           There are certain names referring to certain individuals appearing in
@@ -345,16 +340,30 @@ const Visualization = () => {
           <h4>Distribution of Accounts That Joined Twitter per Month</h4>
           <div className="mx-auto">
             <iframe
-              width="900"
+              className="mx-auto"
+              width="1000"
               height="800"
               frameborder="0"
-              src="//plotly.com/~rj42guez/1.embed"
+              scrolling="no"
+              src="//plotly.com/~rj42guez/23.embed"
             ></iframe>
           </div>
+          <h4>
+            Cumulative Distribution of Accounts That Joined Twitter per Month
+          </h4>
+          <iframe
+            className="mx-auto"
+            width="900"
+            height="800"
+            frameborder="0"
+            scrolling="no"
+            src="//plotly.com/~rj42guez/25.embed"
+          ></iframe>{" "}
           <p>
-            This line graph was made using plotly. Here, you can see that the
-            number of accounts that joined is highest in April 2022 (48
-            accounts), which is just before the 2022 Elections.
+            These line graphs were made using plotly. In the upper graph, it can
+            be seen that the highest number of accounts joined is in April 2022.
+            In the lower graph, the cumulative version is shown. There were a
+            total of 158 disinformation accounts collected in this project.
           </p>
         </div>
         <Image image={joined_boxplot} />
@@ -403,7 +412,8 @@ const Visualization = () => {
           <h4>Distribution of Tweets With Negative Leni-Sentiment per Day</h4>
           <div className="mx-auto">
             <iframe
-              width="900"
+              className="mx-auto"
+              width="1000"
               height="800"
               frameborder="0"
               scrolling="no"
