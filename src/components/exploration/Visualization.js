@@ -6,7 +6,7 @@ import DataFeatureCard from "../DataFeatureCard";
 import Image from "../Image";
 
 import topics_bar_graph from "../../graphs/exploration/tweets_per_incident.png";
-import topics_kde from "../../graphs/exploration/dist_topic_tweets_across_time.png";
+import topics_kde from "../../graphs/exploration/dist_incident_tweets_across_time.png";
 import joined_boxplot from "../../graphs/exploration/dist_acct_creation_wrt_election.png";
 import posted_boxplot from "../../graphs/exploration/dist_tweet_post_wrt_election.png";
 import leni_sentiment_pairplot from "../../graphs/exploration/pairplot_leni_sentiment.png";
@@ -57,9 +57,12 @@ const Visualization = () => {
           <Image image={topics_kde} width="w-4/5" />
           <p>
             It is also interesting to graph and observe when each incident was
-            the most popular. Interestingly, each disinformation incident only
-            has one peak, or have peaks that are relatively close enough which
-            means that the tweets were categorized nicely. Kindly refer to the{" "}
+            the most popular. Interestingly, the highest peak of each
+            disinformation incident is a hundredfold taller than the other
+            peaks. This means that the tweets were categorized nicely. The
+            presence of the other peaks also means that after the onset of a
+            disinformation incident, twitter users tend to talk about it again
+            at a later time. Kindly refer to the{" "}
             <Link to="/collection">Data Collection</Link> page for more
             information about the items in the graph legend.
           </p>
