@@ -115,7 +115,7 @@ const Visualization = () => {
           family. Naturally, the key words appearing are dependent on the
           situation and nature of the incidents. In the Baguio incident, most
           tweets are talking about the Kakampinks by calling them names such as
-          "kakapwet", "pinklawan", and "kakampikon." In the Ladder incident,
+          "kakampwet", "pinklawan", and "kakampikon." In the Ladder incident,
           there were fewer names because Jam Magno's tweet is not easily
           believable and that the incident was short-lived.
         </p>
@@ -137,7 +137,7 @@ const Visualization = () => {
           to. In total, we named 14 relevant entities. The code for
           vectorization and counting references can be found in{" "}
           <ExtLink to="https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/harold-analysis/misc_computations.py">
-            names_vectorizer.py
+            misc_computations.py
           </ExtLink>
         </p>
         <p>
@@ -424,7 +424,7 @@ const Visualization = () => {
             ></iframe>
           </div>
           <p>
-            This line graph was made using seaborn. It is interesting to note
+            This line graph was made using plotly. It is interesting to note
             that the highest number of posted tweets with negative Leni
             sentiment occurred on the 27th of April 2022, also before the 2022
             Elections. Moreover, most of the tweets that are labeled 'Negative'
@@ -448,9 +448,9 @@ const Visualization = () => {
         <Image image={leni_sentiment_pairplot} />
         <p>
           In most cases, the distribution of the data points do not imply some
-          relationship towards the variable Leni Sentiment. There is one pair
-          that is noticeably correlated, the pair of followers and engagement.
-          It is predictable that these two variables are correlated.
+          relationship about the variable Leni Sentiment. There is one pair that
+          is noticeably correlated, the pair of followers and engagement. It is
+          predictable that these two variables are correlated.
         </p>
         <p>
           In this pairplot, the single outlier of diff_date_posted_election was
