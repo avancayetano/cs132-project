@@ -176,7 +176,7 @@ const AboutPage = () => {
           Chismisinfo Website
         </ExtLink>
         <ExtLink
-          href="https://github.com/avancayetano/chismisinfo-backend"
+          to="https://github.com/avancayetano/chismisinfo-backend"
           className="btn btn-secondary"
         >
           Chismisinfo Backend
