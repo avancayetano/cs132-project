@@ -34,7 +34,9 @@ const Visualization = () => {
       </p>
       <section>
         <div>
-          <h4>Distribution of Tweets by Disinformation Incident</h4>
+          <h4 id="visualization-topic-distribution">
+            Distribution of Tweets by Disinformation Incident
+          </h4>
           <Image image={topics_bar_graph} width="w-1/2" />
           <p>
             It is important to note that it has been several months after the
@@ -94,7 +96,9 @@ const Visualization = () => {
         </div>
       </section>
       <section>
-        <h3>Names Entangled in the Mire of Disinformation</h3>
+        <h3 id="visualization-wordclouds">
+          Names Entangled in the Mire of Disinformation
+        </h3>
         <p>
           There are certain names referring to certain individuals appearing in
           the disinformation tweets.
@@ -313,7 +317,7 @@ const Visualization = () => {
           "lugaw" as porridge and "lumulutang-lutang" as floating.
         </p>
       </section>
-      <section>
+      <section id="featuring-disinfo-account">
         <DataFeatureCard
           title="The Disinfo Account"
           description="This card attempts to describe the “average” features of an account involved in posting disinformation."
@@ -379,7 +383,7 @@ const Visualization = () => {
           accounts have joined before the elections.
         </p>
       </section>
-      <section>
+      <section id="featuring-disinfo-account">
         <DataFeatureCard
           title="The Disinfo Tweet"
           description="This card attempts to describe the “average” features of an account involved in posting disinformation."
@@ -443,7 +447,7 @@ const Visualization = () => {
         </p>
       </section>
       <section>
-        <h2>Feature Trends</h2>
+        <h2 id="visualization-trends">Feature Trends</h2>
         <h3>Leni Sentiment Pairplot</h3>
         <Image image={leni_sentiment_pairplot} />
         <p>

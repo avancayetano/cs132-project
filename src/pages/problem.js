@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import BasePage from "../components/BasePage";
 
@@ -47,41 +48,55 @@ const ProblemPage = (props) => {
         <h2 id="exploration-questions">Data Exploration Questions</h2>
         <ol>
           <li>
+            What are the disinformation the Robredo sisters are being alleged
+            with?{" "}
+            <Link to={"/conclusion/#conclusion-incidents"}>[results]</Link>{" "}
+          </li>
+          <li>
             What are the characteristics of the tweets when grouped by
             disinformation topic?
             <ol type="a">
               <li>
                 What are the names associated with disinformation against the
-                Robredo Sisters?
+                Robredo Sisters?{" "}
+                <Link to={"/exploration/#visualization-wordclouds"}>
+                  [results]
+                </Link>{" "}
               </li>
-              <li>How many tweets per topic?</li>
-              <li>When was the first, last tweet of each topic posted?</li>
-              <li>When were the days when each topic was the most trending?</li>
+              <li>
+                How many tweets per topic?{" "}
+                <Link to={"/exploration/#visualization-topic-distribution"}>
+                  [results]
+                </Link>{" "}
+              </li>
+              <li>
+                When were the days when each topic was the most trending?{" "}
+                <Link to={"/analysis/#results-suspect-events"}>[results]</Link>{" "}
+              </li>
             </ol>
           </li>
-          <li>What does the average disinformation tweet look like?</li>
-          <li>What does the average disinformation account look like?</li>
           <li>
-            How do other features compare with the feature Leni Sentiment?
-            (Feature Trends)
-          </li>
-
-          {/* <li>
-            Do tweets referencing Leni have a negative sentiment towards her?
-          </li>
-          <li>Were the disinformation accounts newly created?</li>
-          <li>
-            Do tweets having negative sentiments towards Leni Robredo have a
-            positive sentiment towards Bongbong Marcos?
+            What does the average disinformation tweet look like?{" "}
+            <Link to={"/exploration/#featuring-disinfo-tweet"}>[results]</Link>{" "}
           </li>
           <li>
-            Do tweets, when grouped according to account popularity, differ in
-            terms of sentiment towards Leni Robredo?
+            What does the average disinformation account look like?{" "}
+            <Link to={"/exploration/#featuring-disinfo-account"}>
+              [results]
+            </Link>{" "}
           </li>
           <li>
-            Do tweets, when grouped according to engagement, differ in terms of
-            sentiment towards Leni Robredo?
-          </li> */}
+            Were the disinformation accounts newly created?{" "}
+            <Link to={"/analysis/#results-account-creation"}>[results]</Link>{" "}
+          </li>
+          <li>
+            How do other features compare with the feature Leni Sentiment?{" "}
+            <Link to={"/exploration/#visualization-trends"}>[results]</Link>{" "}
+          </li>
+          <li>
+            Do disinformation tweets have a negative perception of Leni Robredo?{" "}
+            <Link to={"/analysis/#results-hypothesis"}>[results]</Link>{" "}
+          </li>
         </ol>
       </article>
     </BasePage>
