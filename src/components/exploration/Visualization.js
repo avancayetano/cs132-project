@@ -12,6 +12,10 @@ import posted_boxplot from "../../graphs/exploration/dist_tweet_post_wrt_electio
 import leni_sentiment_pairplot from "../../graphs/exploration/pairplot_leni_sentiment.png";
 import has_leni_ref_pairplot from "../../graphs/exploration/pairplot_has_leni_ref.png";
 import feats_heatmap from "../../graphs/exploration/heatmap_num_feats.png";
+import siblingDist from "../../images/siblingDist.png";
+import suspectEvents from "../../images/suspectEvents.png";
+import tweetPerception from "../../images/tweetPerception.png";
+import tweetPieDist from "../../images/tweetPieDist.png";
 import wordcloud_all from "../../graphs/exploration/wordcloud_all.png";
 import wordcloud_baguio from "../../graphs/exploration/wordcloud_baguio.png";
 import wordcloud_scandal from "../../graphs/exploration/wordcloud_scandal.png";
@@ -55,6 +59,18 @@ const Visualization = () => {
           </p>
         </div>
         <div>
+          <h4 id="visualization-topic-distribution">
+            Distribution of Tweets Targeting a Specific Robredo
+          </h4>
+          <Image image={siblingDist} width="w-1/2" />
+          <p>
+            It is interesting to note that Jillian Robredo is the Robredo sister
+            that is mentioned most among the tweets. This is because the Baguio
+            incident is the incident with the highest number of mentions, as
+            seen in the "Number of tweets per incident" barchart.
+          </p>
+        </div>
+        <div>
           <h4>Distribution of Incident Tweets per Day</h4>
           <Image image={topics_kde} width="w-4/5" />
           <p>
@@ -81,17 +97,21 @@ const Visualization = () => {
         </div>
         <div>
           <h4>Distribution of Tweets Across Leni, Marcos Sentiment</h4>
-          <Image image={leni_marcos_sentiment} />
+          <Image image={tweetPerception} />
           <p>
-            The tweets may also be grouped according to their sentiment towards
-            the presidentiables last 2022 elections. Interestingly, there are no
-            positive sentiments for Leni Robredo, and there are no negative
-            sentiments against Bongbong Marcos. This is reminiscent of a news
-            during the campaign period.{" "}
+            The tweets, both disinformation and non-disinformmation, may also be
+            grouped according to their sentiment towards the presidentiables
+            last 2022 elections. Interestingly, there are no positive sentiments
+            for Leni Robredo and no negative sentiments against Bongbong Marcos
+            among disinformation tweets. This is reminiscent of a news during
+            the campaign period.{" "}
             <ExtLink to="https://www.gmanetwork.com/news/topstories/nation/830939/tsek-ph-92-of-false-info-favorable-to-marcos-96-of-disinformation-vs-robredo-negative/story/">
               Tsek.ph: 92% of false info favorable to Marcos, 96% of
               disinformation vs Robredo negative
             </ExtLink>
+            . On the other hand, there are no negative sentiments for Leni
+            Robredo and no positive sentiments against Bongbong Marcos among
+            non-disinformation tweets.
           </p>
         </div>
       </section>
