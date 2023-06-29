@@ -1,23 +1,45 @@
 import React from "react";
 import { Link } from "gatsby";
 import ExtLink from "../ExtLink";
-
+import Image from "../Image";
+import tweet_perception from "../../images/tweetPerception.png";
+import suspect_events from "../../graphs/suspect_events.png";
 const Results = () => {
   return (
     <div>
-      <h3>???Number of Disinformation Tweets received by each Robredo???</h3>
-      <h3 id="results-suspect-events">
+      {/* <h3>???Number of Disinformation Tweets received by each Robredo???</h3> */}
+      {/* <h3 id="results-suspect-events">
         Suspect Events leading to Disinformation Incident
       </h3>
-      <p>pa-screenshot nga nung nasa canva</p>
+      <div>
+        <Image image={suspect_events}></Image>
+      </div>
       <h3>Tweet Perception</h3>
-      <h3 id="results-hypothesis">Statistical Analysis</h3>
+      <div>
+        <Image image={tweet_perception}></Image>
+      </div> */}
+
+      <h2 id="results-hypothesis">Statistical Analysis</h2>
       <p>
-        Is there a significant difference between tweet disinformation groups in
-        terms of sentiment towards Leni Robredo?
+        The code for this section can be found in{" "}
+        <ExtLink
+          to={
+            "https://github.com/avancayetano/chismisinfo-backend/blob/main/analysis/apply_chi_square.py"
+          }
+        >
+          apply_chi_square.py
+        </ExtLink>
       </p>
-      <h4>Contingency Table</h4>
-      <table className="table table-compact">
+      <p>
+        <b>Research Question: </b>Is there a significant difference between
+        tweet disinformation groups in terms of sentiment towards Leni Robredo?
+      </p>
+      <h3>Contingency Table</h3>
+      <p>
+        Note: this is the tabular form of{" "}
+        <Link to="/exploration/#tweet-perception-123">this graph.</Link>
+      </p>
+      <table className="table table-compact mx-auto">
         <tr>
           <td></td>
           <th></th>
@@ -43,12 +65,12 @@ const Results = () => {
           <td>47</td>
         </tr>
       </table>
-      <h4>Hypothesis Testing</h4>
+      <h3>Hypothesis Testing</h3>
       <p>
         We used chi-square test for independence to test whether or not to
         reject the null hypothesis.
       </p>
-      <table className="table table-compact w-1/4">
+      <table className="table table-compact w-1/4 mx-auto z-0">
         <tr>
           <th>Chi Square Statistic</th>
           <td>169.01</td>
@@ -59,8 +81,9 @@ const Results = () => {
         </tr>
       </table>
       <p>
-        Reject the null hypothesis: There is a significant difference between
-        the disinformation groups in terms of sentiment towards Leni Robredo.
+        <b>Reject the null hypothesis:</b> There is a significant difference
+        between the disinformation groups in terms of sentiment towards Leni
+        Robredo.
       </p>
     </div>
   );

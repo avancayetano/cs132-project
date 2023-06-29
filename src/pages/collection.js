@@ -23,9 +23,11 @@ const CollectionPage = () => {
             </ExtLink>
             , we were able to scrape 2,730 unique tweets. Unfortunately, due to
             time constraints, we were not able to review and classify each
-            scraped tweet whether it is a misinformation tweet or not. However,
-            from these tweets, we managed to identify 203 misinformation tweets
-            from 158 accounts.
+            scraped tweet whether it is a disinformation tweet or not. However,
+            from these tweets, we managed to identify 203 disinformation tweets
+            from 158 accounts. Moreover, we also identified 265
+            non-disinformation tweets as a control dataset for our data
+            analysis.
           </p>
           <h3>Data Columns</h3>
           <p>

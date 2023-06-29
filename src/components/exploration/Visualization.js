@@ -24,7 +24,8 @@ import wordcloud_ladder from "../../graphs/exploration/wordcloud_ladder.png";
 import wordcloud_others from "../../graphs/exploration/wordcloud_others.png";
 import leni_marcos_sentiment from "../../graphs/exploration/sentiment_doublehisto.png";
 import lxrscatter from "../../graphs/exploration/lxrscatter.png";
-
+import suspect_events from "../../graphs/suspect_events.png";
+import cumulative_disinfo from "../../graphs/cumulative_disinfo.png";
 const Visualization = () => {
   return (
     <div>
@@ -84,22 +85,49 @@ const Visualization = () => {
             <Link to="/collection">Data Collection</Link> page for more
             information about the items in the graph legend.
           </p>
+        </div>
+        <div>
+          <h4 id="results-suspect-events">
+            Suspect Events leading to Disinformation Incident
+          </h4>
+          <div>
+            <Image image={suspect_events}></Image>
+          </div>
           <p>
             The Baguio incident disinformation tweets were possibly triggered by
-            the heckling at the Baguio Public Market on April 27, 2022. The
+            the heckling at the Baguio Public Market on April 26, 2022. The
             Scandal incident disinformation tweets were possibly triggered by
             the surfacing of suspicious links on April 11, 2022. The Quarantine
             incident disinformation tweets were possibly triggered by Jay
-            Sonza's Facebook post on December 31, 2021. The Ladder incident
+            Sonza's Facebook post on December 25, 2021. The Ladder incident
             disinformation tweets were possibly triggered by Jam Magno's tweet
             on April 6, 2022.
           </p>
         </div>
         <div>
-          <h4>Distribution of Tweets Across Leni, Marcos Sentiment</h4>
+          <h4 id="cumulative-disinfo">
+            Cumulative Count of Disinformation Tweets
+          </h4>
+          <Image image={cumulative_disinfo} />
+          <p>
+            Our group find it interesting that the highest increase in
+            disinformation tweets occured just a month before the election.
+            Moreover, as we'll see in the next section, a number of
+            disinformation tweets have negative tweets towards ex-VP Leni
+            Robredo. Our opinion from these observations is that the Robredo
+            siblings were used by trolls and fake news peddlers to ruin the
+            image of the ex-VP in order to reduce her chances of winning the
+            national elections.
+          </p>
+        </div>
+
+        <div>
+          <h4 id="tweet-perception-123">
+            Distribution of Tweets Across Leni, Marcos Sentiment
+          </h4>
           <Image image={tweetPerception} />
           <p>
-            The tweets, both disinformation and non-disinformmation, may also be
+            The tweets, both disinformation and non-disinformation, may also be
             grouped according to their sentiment towards the presidentiables
             last 2022 elections. Interestingly, there are no positive sentiments
             for Leni Robredo and no negative sentiments against Bongbong Marcos

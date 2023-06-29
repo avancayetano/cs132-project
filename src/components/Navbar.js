@@ -38,7 +38,10 @@ const Navbar = (props) => {
   return (
     <nav className="navbar bg-base-100 sticky top-0 border z-10 border-b-2 border-x-0 mb-8">
       <div className="navbar-start">
-        <label htmlFor="my-drawer" className="btn btn-ghost drawer-button">
+        <label
+          htmlFor="my-drawer"
+          className="btn btn-ghost drawer-button hidden"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

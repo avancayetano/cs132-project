@@ -1,11 +1,11 @@
 import React from "react";
 import BasePage from "../components/BasePage";
 import ExtLink from "../components/ExtLink";
-
+import { Link } from "gatsby";
 const ConclusionPage = () => {
   return (
     <BasePage page={"Conclusion"}>
-      <article className="prose lg:prose-xl text-justify mx-auto">
+      <article className="prose lg:prose-xl text-justify mx-auto prose-a:text-blue-600">
         <h1 className="text-center">Conclusion</h1>
         <p>
           As presidential aspirant Leni Robredo campaigned for the 2022 National
@@ -62,14 +62,20 @@ const ConclusionPage = () => {
           <ExtLink to="https://www.gmanetwork.com/news/hashtag/content/583335/everywoman-netizens-rally-against-showing-sex-video-in-congress/story/">
             protecting
           </ExtLink>{" "}
-          the identity of a woman in a sex video viewed by the Congress.
+          the identity of a woman in a sex video viewed by the Congress. It is
+          also important to emphasize again that most of disinformation tweets
+          were posted just{" "}
+          <Link to="/exploration/#cumulative-disinfo">
+            one month before the election
+          </Link>
+          .
         </p>
         <p>
           While the disinformation tweets primarily targeted the Robredo
           sisters, tweets containing disinformation have an associated
           perspective toward some candidates of the election. Disinformation
           tweets and non-disinformation tweets are associated with different
-          perceptions toward then presiential aspirant Leni Robredo and
+          perceptions toward then presidential aspirant Leni Robredo and
           Ferdinand Marcos Jr. In particular, about half of the disinformation
           tweets have a negative sentiment toward Robredo and about a tenth have
           a positive sentiment toward Marcos. Robredo was never praised by the
